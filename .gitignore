@@ -1,1 +1,9 @@
 /scripts
+
+# api_docs toolchain: snapshots are large (~19MB/run) and only used as a local
+# diff baseline. The latest dump lives under docs/api-reference/raw-html/ (tracked),
+# so git history can also serve as a baseline.
+/tools/api_docs/snapshots/
+/tools/api_docs/last-diff.json
+/tools/api_docs/_test_new/
+**/__pycache__/

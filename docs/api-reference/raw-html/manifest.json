@@ -1,0 +1,1286 @@
+{
+  "generated_utc": "2026-05-29T16:49:35Z",
+  "base_url": "https://cascadeur.com/python-api/",
+  "page_count": 209,
+  "files": {
+    "csc.Direction.html": {
+      "sha256": "8a4b4dca3e82531863dadc04546c91e90bd62d7a6d13e31fce16191296854742",
+      "size": 62954,
+      "etag": "\"69f21bd6-f5ea\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.DirectionValue.html": {
+      "sha256": "4818eb048947871f3f68939ead00692b10afd6611b8c32dd867f3969a945cb85",
+      "size": 74439,
+      "etag": "\"69f21bd6-122c7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.Guid.html": {
+      "sha256": "6cf030db4c0dcc5c110bde4b0b81d91718e968d104d586dd1b511ac0616c3621",
+      "size": 65198,
+      "etag": "\"69f21bd6-feae\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.SystemVariables.html": {
+      "sha256": "0773ddcd91e4824e4f5868b583ec484b8c6e90642c63e5613209408479aa3097",
+      "size": 63454,
+      "etag": "\"69f21bd6-f7de\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.Version.html": {
+      "sha256": "6f0fb06122f3c70cdbd3a484fece4e74092f7b5a2811ba4c9313e9b35039dfed",
+      "size": 71872,
+      "etag": "\"69f21bd6-118c0\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.ActionManager.html": {
+      "sha256": "c6154b6bec6e1c5a6ef78ae741dadcf81ca618a8846612198513b4c6b1672fe4",
+      "size": 58917,
+      "etag": "\"69f21bd6-e625\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.Application.html": {
+      "sha256": "e16aa4c5811ce12f4f6707f9d43b13185aef0e57344de02e323b16eef73bf358",
+      "size": 72409,
+      "etag": "\"69f21bd6-11ad9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.CascadeurTool.html": {
+      "sha256": "df23ca571337921a4dbe2c09b0e73a0203113be9e57579c7e63a21871e2e092e",
+      "size": 59762,
+      "etag": "\"69f21bd6-e972\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.DataSourceManager.html": {
+      "sha256": "fe32b1a891e4bd61af9b72841af0e81a92026f6b0643b35a165206e93893d85c",
+      "size": 66533,
+      "etag": "\"69f21bd6-103e5\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.ProjectLoader.html": {
+      "sha256": "fbeba8d051dc0819a3a3839a6718bda69ba5a8f52497c860c708331d9ea398fc",
+      "size": 58698,
+      "etag": "\"69f21bd6-e54a\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.SceneManager.html": {
+      "sha256": "b35406243e7ebddafd92602163162b2445ec5542b9c50fd44955312ef86f9200",
+      "size": 65925,
+      "etag": "\"69f21bd6-10185\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.SceneTool.html": {
+      "sha256": "0ca0590ac219544f0ffeadc3ede4dbcf84ab48a971a8fdc4ca48440d68476f2a",
+      "size": 55501,
+      "etag": "\"69f21bd6-d8cd\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.SettingsManager.html": {
+      "sha256": "f493351af5ea44a41d90f6fd73d7ec3b57d15aa2bfccc1d39aef6df0fb02156a",
+      "size": 64047,
+      "etag": "\"69f21bd6-fa2f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.SimpleStatusInformer.html": {
+      "sha256": "5a5bd0a6c501bd49a7bd03bd27b90365a3a72a3a026b35334a80a814880beda8",
+      "size": 64111,
+      "etag": "\"69f21bd6-fa6f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.StatusManager.html": {
+      "sha256": "66b0b67f06a03eded1c7fb90a98cbcf6ae92aa6d9544884051f0a05da6fe57ee",
+      "size": 58345,
+      "etag": "\"69f21bd6-e3e9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.app.ToolsManager.html": {
+      "sha256": "81c25796947d406165934f74337405519589d74b2fe9a467756a0e187eb33abb",
+      "size": 61026,
+      "etag": "\"69f21bd6-ee62\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Asset.html": {
+      "sha256": "292c115a49b7a2f1e511ae4d93a4edeb0f102daa06cb2d18146acf0376d268a2",
+      "size": 56546,
+      "etag": "\"69f21bd6-dce2\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.AssetId.html": {
+      "sha256": "25725d63c9e744bf5d99154111426a97a090a211f6ef656b50134347bc789bb8",
+      "size": 66147,
+      "etag": "\"69f21bd6-10263\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.FrameActionOnChange.html": {
+      "sha256": "83fcd8b637245f5dad0bc5bc9be7163163533bc4834ede99816d38ffd42ebee9",
+      "size": 74799,
+      "etag": "\"69f21bd6-1242f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.IMessageHandler.html": {
+      "sha256": "76ccab1ea470d8950d8ce555eb48b6b13f6eaf7b6ed2afef0550f487ec1794d8",
+      "size": 55666,
+      "etag": "\"69f21bd6-d972\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.IntervalActionOnChange.html": {
+      "sha256": "299899ef72245f4730e195599537aff6a2e36bb1a77641ba1091c8ab386731e7",
+      "size": 73959,
+      "etag": "\"69f21bd6-120e7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.LocalInterpolator.html": {
+      "sha256": "64006f21f0b26712800705d7dc036c56908270e76c68951ad4664c9e3628eb07",
+      "size": 58655,
+      "etag": "\"69f21bd6-e51f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Pivot.html": {
+      "sha256": "6db52acf20397f618c4ff2b1b4b71e03b45a34afcfa1b9812ebb1369ab9f7b90",
+      "size": 63760,
+      "etag": "\"69f21bd6-f910\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.ProcessorsStorage.html": {
+      "sha256": "31b8fcd3dc7d20ff6580d1c5509cb80c4ad507db1f762b65b8786a68d3b6f539",
+      "size": 55788,
+      "etag": "\"69f21bd6-d9ec\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Scene.html": {
+      "sha256": "75550f5b586ba46ed0e3c257f297c6e7fa28181da29a061b7faacf459f0f9205",
+      "size": 88921,
+      "etag": "\"69f21bd6-15b59\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.SceneUpdater.html": {
+      "sha256": "ed76c60f3e7403ce975a0a72c8689b1ad2f7c844846d3eb681dd5a4224292682",
+      "size": 61954,
+      "etag": "\"69f21bd6-f202\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Select.html": {
+      "sha256": "d2c48067167bb89925204b95d3c0cb47f1d7a430ef0c9c8f2f82ee37ce54aa12",
+      "size": 60904,
+      "etag": "\"69f21bd6-ede8\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Selection.html": {
+      "sha256": "531eddcbfd9638dc7c078ce58baf18e3f58a3e79fcccb340d1f889bba72733db",
+      "size": 57481,
+      "etag": "\"69f21bd6-e089\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Selector.html": {
+      "sha256": "04425caf18f934c5672ed14012cd80ab5f7552fb7c192c78bfb223b842cd4684",
+      "size": 60517,
+      "etag": "\"69f21bd6-ec65\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.SelectorFilter.html": {
+      "sha256": "7141d8ba789bc331f0d05df28dac5f67c65bd7e2eba0f7ea301567d5a71d6ec8",
+      "size": 78860,
+      "etag": "\"69f21bd6-1340c\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.SelectorMode.html": {
+      "sha256": "a1ee74442719b43839d8797084b8c033e17b1a21ee91e286618d3b294eb35d40",
+      "size": 77094,
+      "etag": "\"69f21bd6-12d26\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Session.html": {
+      "sha256": "a680d10ab4c1805ed11cf5579b93b8b243c0cc3b9a7fb4798cae701caf8e5180",
+      "size": 60163,
+      "etag": "\"69f21bd6-eb03\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.StatePivot.html": {
+      "sha256": "d3cf57e684dd00e176ac6aeae9448a52d9a8d4e30348f8f701c2ea30d74c7982",
+      "size": 72668,
+      "etag": "\"69f21bd6-11bdc\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.Tool_object_id.html": {
+      "sha256": "6c08115415c1b5641ac1dcbc639b82e0bdedec0f621e58cb7e65f1fe4bb8c22b",
+      "size": 66856,
+      "etag": "\"69f21bd6-10528\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.assets.AssetsManager.html": {
+      "sha256": "55de7f81677a86c5c3448e19178f10fb3db18da786685782d09a278e22ebc156",
+      "size": 73871,
+      "etag": "\"69f21bd6-1208f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.assets.Mesh.html": {
+      "sha256": "0881a0e2c40d1d594a8cebe60e5a6dcc1147d48099685e42a943de6a6dd38b13",
+      "size": 65228,
+      "etag": "\"69f21bd6-fecc\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.assets.MeshBlendshape.html": {
+      "sha256": "57f9d5c7c8101fbd9e262370a854ee117f4dcdc1918392dd229d2772607216f5",
+      "size": 56850,
+      "etag": "\"69f21bd6-de12\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.assets.MeshDependency.html": {
+      "sha256": "2701e5777979956dce63036823d847492f9d2c74f295ef2f0ecc79fa892cbf07",
+      "size": 60774,
+      "etag": "\"69f21bd6-ed66\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.domain.assets.Vertex.html": {
+      "sha256": "43995389328cf386ad4ec8fc8fc3877afcb960494d3d69e8d6bb5fbae8dad77c",
+      "size": 58587,
+      "etag": "\"69f21bd6-e4db\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.external.ExtraDatas.html": {
+      "sha256": "1636445b9d3c92042c955f489a08fb016f23bc4a7d135db1fa9df697120fcf0e",
+      "size": 60602,
+      "etag": "\"69f21bd6-ecba\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.external.FbxDatas.html": {
+      "sha256": "13f44be85632fdb6971bcdab689d9c4748ac61a7d34009d1cbd86aa22349e604",
+      "size": 60500,
+      "etag": "\"69f21bd6-ec54\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.fbx.FbxLoader.html": {
+      "sha256": "750114a9547520f53ba695ce6718ae24f4478ecd5cc2b86e4e671af675e02cee",
+      "size": 114018,
+      "etag": "\"69f21bd6-1bd62\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.fbx.FbxSceneLoader.html": {
+      "sha256": "15d4bb5deabe3515358996282fe9c8aa541e953800a2cc5a4ec3344e219ea05f",
+      "size": 68918,
+      "etag": "\"69f21bd6-10d36\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.fbx.FbxSettings.html": {
+      "sha256": "f0844763c6622061dd9b5d302c2ad67c42a175621e004e9d6ad9ab3ef905d838",
+      "size": 65724,
+      "etag": "\"69f21bd6-100bc\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.fbx.FbxSettingsAxis.html": {
+      "sha256": "b916b7059e660d57b5f0cb571ededcc2cc8e78b242d4fe33d709d9a8e55c8b25",
+      "size": 73771,
+      "etag": "\"69f21bd6-1202b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.fbx.FbxSettingsMode.html": {
+      "sha256": "ea07a983e2b36d53500be79973d1e8ca3119d9866b176fd13b1dd8488ceaf847",
+      "size": 77206,
+      "etag": "\"69f21bd6-12d96\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.html": {
+      "sha256": "89136d569c7063698a17ede438f2f184992e6c7f8e86e170dd36f5af600104f3",
+      "size": 2622559,
+      "etag": "\"69f21bd7-28045f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.Cycle.html": {
+      "sha256": "48631148a047367ea6ca6f772247142c8130c294be7b19608c087e85a3570e27",
+      "size": 71287,
+      "etag": "\"69f21bd6-11677\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.layers.CyclesEditor.html": {
+      "sha256": "127d32dfe674432b6051297a77d5164932daf5ba201d4c9063745eec2879cb32",
+      "size": 69883,
+      "etag": "\"69f21bd6-110fb\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.layers.CyclesViewer.html": {
+      "sha256": "60cd08768eb9fd6ab9c5cb49fe46e013a416d0ede4c458560b16fbc561f9be69",
+      "size": 84249,
+      "etag": "\"69f21bd6-14919\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.layers.Editor.html": {
+      "sha256": "52e06103d5fb108e9d964f9f29bb0d46770135811eeac1509ac5be1b2de2a9f4",
+      "size": 102399,
+      "etag": "\"69f21bd6-18fff\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:18 GMT"
+    },
+    "csc.layers.Folder.html": {
+      "sha256": "c7e3ad381e5220452505acc72fe97b9ae3679efd9a4878d2988e5ec570cefb2a",
+      "size": 69452,
+      "etag": "\"69f21bd7-10f4c\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.Header.html": {
+      "sha256": "cc83690c4a1ac6ae1548f7d1ddaefc45e76e38012149f30e50e799253cb522a5",
+      "size": 58238,
+      "etag": "\"69f21bd7-e37e\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.ItemVariant.html": {
+      "sha256": "dfb62be56d280c5f2ef9c4db5ea0b7fd3679f4c1f7994f0de670261e08d6e6db",
+      "size": 62668,
+      "etag": "\"69f21bd7-f4cc\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.Layer.html": {
+      "sha256": "39053f6b2a5b0d88932b694c71ba79c908b6248edbdb58729758d60ce15e902c",
+      "size": 80085,
+      "etag": "\"69f21bd7-138d5\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.Layers.html": {
+      "sha256": "c1597e96b0eb976f679ef0c95b1857e7579a646e94ba283f79f440619c226ddb",
+      "size": 60985,
+      "etag": "\"69f21bd7-ee39\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.LayersContainer.html": {
+      "sha256": "0c4df5b3dcc3831428a18f45da3ba1a69c6b6e5e6ba3b07118f3a03a34337aaa",
+      "size": 66485,
+      "etag": "\"69f21bd7-103b5\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.LayersSelectionChanger.html": {
+      "sha256": "9759386b37510603d7b377b02c00384265c1e46f9e49fd1d386ab97666765b46",
+      "size": 60701,
+      "etag": "\"69f21bd7-ed1d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.Selector.html": {
+      "sha256": "3c546b8c60b53d12021b34c3bfca75368400d52dabda90e08df4f514997bbc5d",
+      "size": 70070,
+      "etag": "\"69f21bd7-111b6\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.UserLabelData.html": {
+      "sha256": "4118175660335531090e96b014b43f45c1f7f0d1567b21dd2fc52135ef52a597",
+      "size": 58211,
+      "etag": "\"69f21bd7-e363\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.Viewer.html": {
+      "sha256": "36f76d1238f688c81fdd333f908eb2ebe980ed4585dd8fa2549b6618f7704800",
+      "size": 108656,
+      "etag": "\"69f21bd7-1a870\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.index.CellIndex.html": {
+      "sha256": "fe8485a0bd97df92fcf60c0a56e659711299d78db3140eb5a9d33c8a8ef1e22d",
+      "size": 63317,
+      "etag": "\"69f21bd7-f755\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.index.FramesIndices.html": {
+      "sha256": "ded842f214e20db5361e4f033273935fe5d73957b5ee457432b8d7ef5dec6400",
+      "size": 76656,
+      "etag": "\"69f21bd7-12b70\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.index.FramesInterval.html": {
+      "sha256": "3d014273a3229f3835c91e79449fbb3369fa248993854d9a03e7b493c558486d",
+      "size": 62944,
+      "etag": "\"69f21bd7-f5e0\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.index.IndicesContainer.html": {
+      "sha256": "ea8dcf8b3719386bc32664e8ffc3b20f3826d7d3425e8a660b580f69d9ff019e",
+      "size": 84729,
+      "etag": "\"69f21bd7-14af9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.index.RectIndicesContainer.html": {
+      "sha256": "06a79379602ea7687cc4f67fb5c7586f13142080865dd08b886e04c9dbf9c9ae",
+      "size": 67868,
+      "etag": "\"69f21bd7-1091c\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Cell.html": {
+      "sha256": "f2f1a1fc3a2b3f22ba2e29bbef6c2b101632dfe5fc78f105bc8dd909080df9b2",
+      "size": 58188,
+      "etag": "\"69f21bd7-e34c\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Common.html": {
+      "sha256": "9f03dcc22b58df5544b4e050d42fc866455e855b9874ffcacd635201eeae8239",
+      "size": 58267,
+      "etag": "\"69f21bd7-e39b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Fixation.html": {
+      "sha256": "e21608927a09a506e919c86fd841ef67991bfb99a9279bf620e4adeb1cd546ca",
+      "size": 72746,
+      "etag": "\"69f21bd7-11c2a\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.IkFk.html": {
+      "sha256": "b8d90779532d23c0d9f5dbb8833c512fe76a198cca69b5f53fdc87dc17e39828",
+      "size": 73245,
+      "etag": "\"69f21bd7-11e1d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Interpolation.html": {
+      "sha256": "24cf2f9dd0266b1743b56b7ce53433796537da7ba751c9f0d8f9a61b7199aeff",
+      "size": 80231,
+      "etag": "\"69f21bd7-13967\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Interval.html": {
+      "sha256": "556c22fc9f7a42f3a24d10367fdf41b31149429e096a6a6f8a2b30134d24bd08",
+      "size": 59419,
+      "etag": "\"69f21bd7-e81b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Key.html": {
+      "sha256": "98b9f013666a3d944adf2b0c075d6a4b03bfd88969c42dcbc53853226e1450a1",
+      "size": 60628,
+      "etag": "\"69f21bd7-ecd4\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Section.html": {
+      "sha256": "e360c920bcd2a2e479244d2d350e077a835ccb27c6785d99d181ce527f02e0a3",
+      "size": 58281,
+      "etag": "\"69f21bd7-e3a9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.layers.layer.Tangents.html": {
+      "sha256": "164c5471b26ebbca4ab892c72b0334569032d40f9d61e37fb1a8098426571dd6",
+      "size": 72904,
+      "etag": "\"69f21bd7-11cc8\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.OrthogonalTransform.html": {
+      "sha256": "3181bc44c91a7896bce5dd7c8b97ea2a285742955dc4694cd5116a5b59dfdd13",
+      "size": 58482,
+      "etag": "\"69f21bd7-e472\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.Quaternion.html": {
+      "sha256": "d750e220220679de582f80bf9cab3bc1fb742fb3d785e0ccabd1f895944d9c77",
+      "size": 70211,
+      "etag": "\"69f21bd7-11243\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.Rotation.html": {
+      "sha256": "222e9b9a07c1f6184c861b84557fb8ac1cc76085a6289b662f7eebc85293ef2d",
+      "size": 73194,
+      "etag": "\"69f21bd7-11dea\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.ScaledTransform.html": {
+      "sha256": "e2129b4b7d0edb4dda01c8ac8161d511fe5c8b8cf3c79f84fe257d0e7d9f5b6b",
+      "size": 62024,
+      "etag": "\"69f21bd7-f248\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.SizesInterval.html": {
+      "sha256": "0ce04012385d8b2950a81434fa15c6b0502f54753133ded91f8dd858864387d0",
+      "size": 75277,
+      "etag": "\"69f21bd7-1260d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.Triangle.html": {
+      "sha256": "71abed4edadac7b22ac29750e515cc829a0b43c45a6f091629c6cb164159ae47",
+      "size": 62738,
+      "etag": "\"69f21bd7-f512\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.basic_transform_from_triangle.html": {
+      "sha256": "8d110f913f30545147246a00972dc5e784236bc674d84ca8955ea1122f39196e",
+      "size": 52868,
+      "etag": "\"69f21bd7-ce84\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.euler_angles_to_quaternion_x_y_z.html": {
+      "sha256": "014550ea4200390b76cd47cdc8e84e4e426ea39d5aaf61a68af6d267a7f5ae3e",
+      "size": 53483,
+      "etag": "\"69f21bd7-d0eb\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.get_m3f_diag.html": {
+      "sha256": "f9ecaf4b3d182e92786f9086ee0be7e8c4839c818ba027ed54cadff19867b8ac",
+      "size": 53508,
+      "etag": "\"69f21bd7-d104\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.inverse_transform_point.html": {
+      "sha256": "94f46b5a9b3b0a064649244cf7c32dbbc4859e604926064cc4139aa22840ba1d",
+      "size": 53270,
+      "etag": "\"69f21bd7-d016\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.modify_position_by_matrix.html": {
+      "sha256": "2493113b26c745e23a78ceb7b59aa7165bee08d719af76b70afb3a6239d5bf7b",
+      "size": 54337,
+      "etag": "\"69f21bd7-d441\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.project_point_on_basic_line.html": {
+      "sha256": "c5edfea7249d53402f7499748de57767993d51f37b4a9440d84cedd62a261298",
+      "size": 54392,
+      "etag": "\"69f21bd7-d478\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.transform_point.html": {
+      "sha256": "1d73a651feeecd4832332871b845387087a5d2aa66fc12eed69281488c64ed8f",
+      "size": 53069,
+      "etag": "\"69f21bd7-cf4d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.math.transforms_difference.html": {
+      "sha256": "34c352ce04b9eea38ebac49a0adea7bcee3bd7e663785bde87a252de98ad1ece",
+      "size": 53029,
+      "etag": "\"69f21bd7-cf25\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.BehaviourEditor.html": {
+      "sha256": "8346453a128931294ef8c53086c99a81c61d6d8a47024905e7b00ea16107b1e4",
+      "size": 120814,
+      "etag": "\"69f21bd7-1d7ee\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.BehaviourId.html": {
+      "sha256": "014773d3e512e4f44e2f69a1facc4c2afab492f07fb2c031402d1acdf0f05682",
+      "size": 66456,
+      "etag": "\"69f21bd7-10398\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.BehaviourViewer.html": {
+      "sha256": "8aa937143b17babf967a03c8ea895e08aa1a2b045854b5d1bb266032e6cbd450",
+      "size": 115588,
+      "etag": "\"69f21bd7-1c384\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.ClusterEditor.html": {
+      "sha256": "ac7a81ad5e7f65c7ae5329ea7a26dfd800ca0948c306364804cf64f008a7532a",
+      "size": 73322,
+      "etag": "\"69f21bd7-11e6a\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.ClusterViewer.html": {
+      "sha256": "8e62420c28c244bc4590285897e044e994754e0db275d490cb86408e7209d8bd",
+      "size": 65123,
+      "etag": "\"69f21bd7-fe63\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.ClustersEdge.html": {
+      "sha256": "b29333384c7b3a50b3a5b191daec3ef0b26318465e3fed604278601c4dee33f9",
+      "size": 57261,
+      "etag": "\"69f21bd7-dfad\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.CustomSelectionPolicy.html": {
+      "sha256": "c6dbd9d55e36ae070872bce87cbe6fe180e2742c1fd4bbe12589cf79759aab70",
+      "size": 75150,
+      "etag": "\"69f21bd7-1258e\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.Data.html": {
+      "sha256": "d0738ed243e9ad7961ce2cf02ab99e25e72bf20eedecbbb66ecd22453261809c",
+      "size": 59134,
+      "etag": "\"69f21bd7-e6fe\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.DataEditor.html": {
+      "sha256": "ea986d3717e68892a4f4c1ed74ff1449c1ac4afdc006085e6d168f09becef72d",
+      "size": 89458,
+      "etag": "\"69f21bd7-15d72\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.DataId.html": {
+      "sha256": "5dd2fd7cf81156c6f1f8d7d41fef9dc1f0da098557da05f3591dca139b19fab0",
+      "size": 65977,
+      "etag": "\"69f21bd7-101b9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.DataMode.html": {
+      "sha256": "c494910bd4551882fca0aa9ecde310a191a3a1d1a39923ba5bf800fafb620173",
+      "size": 72405,
+      "etag": "\"69f21bd7-11ad5\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.DataViewer.html": {
+      "sha256": "4c17258a7672cb9a2c75b8d7cf196b7a0fccf9250d99bdfbbef074f2ff6da2bc",
+      "size": 94045,
+      "etag": "\"69f21bd7-16f5d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.DescriptionTerm.html": {
+      "sha256": "f1be608e05b7ab5a49530d1baec4baa12631505cee077fa4272d52a731de1e8a",
+      "size": 56315,
+      "etag": "\"69f21bd7-dbfb\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.HyperedgeId.html": {
+      "sha256": "d0a0965cbb8ab3a839c3ab5d861978923ec45cc30917ffb3d809c15310fc1277",
+      "size": 66500,
+      "etag": "\"69f21bd7-103c4\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.LerpMode.html": {
+      "sha256": "ce4427a9ee828920ad9dc06acfbb54f84b637c0724f8fc82b7dd0be4cb365d34",
+      "size": 73393,
+      "etag": "\"69f21bd7-11eb1\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.ModelEditor.html": {
+      "sha256": "ba59702e84854460f54109a9bff504bd5df34046bbd48adecdbce1d66bf2f7f4",
+      "size": 83017,
+      "etag": "\"69f21bd7-14449\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.ModelViewer.html": {
+      "sha256": "f8f9b16cbe77a01cef39838d3015a595972845e7da78eaa09af5d38094ddc74b",
+      "size": 63857,
+      "etag": "\"69f21bd7-f971\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.ObjectId.html": {
+      "sha256": "2e7970422ce51076158d9553c31e85f5ffc025326507d51e9c2113c7b4b856b9",
+      "size": 66167,
+      "etag": "\"69f21bd7-10277\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.PathName.html": {
+      "sha256": "4b6d129f9eabde403b3b31e06de1593d05d52b31b818a490f56b8e3af801aa26",
+      "size": 84924,
+      "etag": "\"69f21bd7-14bbc\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.PropertyType.html": {
+      "sha256": "3917799f9207f2696cf165b198d18ab61d0ffbd4c33e3b35bf6d75f08f990188",
+      "size": 84528,
+      "etag": "\"69f21bd7-14a30\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.Setting.html": {
+      "sha256": "093c5a51f2a06e8f110a77bf5610b8ac7ace45bc4a1502b1bb83456de8964546",
+      "size": 60913,
+      "etag": "\"69f21bd7-edf1\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.SettingFunctionId.html": {
+      "sha256": "9d82b51cc4dbd6ae27c650977fd5046093fbe6eb26970820b176cf94db660567",
+      "size": 67066,
+      "etag": "\"69f21bd7-105fa\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.SettingId.html": {
+      "sha256": "b7dfc9e56d8d602a62b9fe1bc556bdf7a6aeb0301363e52a7d41125feaff65d6",
+      "size": 66286,
+      "etag": "\"69f21bd7-102ee\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.model.SettingMode.html": {
+      "sha256": "a2fb04f0f7b819ce15b387df8e593558a8bece1755442ba9e793a61f7177e919",
+      "size": 72653,
+      "etag": "\"69f21bd7-11bcd\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.parts.Buffer.html": {
+      "sha256": "4e5ac5ea9913022d457e6f9d6b5072e4f83234f1c1387bb418bd6cfb39addd10",
+      "size": 86175,
+      "etag": "\"69f21bd7-1509f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.parts.GroupInfo.html": {
+      "sha256": "5b712ee85fc6a2c9ceba42776b59a94d486737d6e481585f1c18f74546860999",
+      "size": 59961,
+      "etag": "\"69f21bd7-ea39\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.parts.Info.html": {
+      "sha256": "0f2c078d1c228cd44a62487cad86351a057d573a374efbd11254dcb6a19428f5",
+      "size": 58908,
+      "etag": "\"69f21bd7-e61c\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.parts.SceneClipboard.html": {
+      "sha256": "3d107a160da7e3fc481da6475dbbbb87e6b184ff0dcb059e3302a804c3e3eae1",
+      "size": 63189,
+      "etag": "\"69f21bd7-f6d5\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.parts.Type.html": {
+      "sha256": "388f6aff23470469582018c1a19450e5604ff83c0bd88eb1a3e8ab1441f81b30",
+      "size": 75511,
+      "etag": "\"69f21bd7-126f7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.physics.PosMass.html": {
+      "sha256": "ce4f3f07d84b83859c3e2644137484746d243c3d32bcea9e849eb2924126cf39",
+      "size": 60123,
+      "etag": "\"69f21bd7-eadb\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.physics.inertia_tensor.html": {
+      "sha256": "34f247e7c68aeb29d289d8c2300be67304243250be41941c5e426b81af101843",
+      "size": 54081,
+      "etag": "\"69f21bd7-d341\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.rig.AddElementData.html": {
+      "sha256": "3cfa4948b75dffed62e4f581afdab7b2b727dc8830d1c069ab3a18e4a5986463",
+      "size": 66635,
+      "etag": "\"69f21bd7-1044b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.rig.BoneProperty.html": {
+      "sha256": "992e84859b58178e90dbcf0efde653ceaf49345d592d0b5bb1f440ab2aa97244",
+      "size": 59703,
+      "etag": "\"69f21bd7-e937\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.rig.QrtData.html": {
+      "sha256": "6010cd2e6d7128749336dba40af25f42ab57d4badb1e46827ca1cac7a2b0d43c",
+      "size": 66097,
+      "etag": "\"69f21bd7-10231\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.rig.TwistBoneProperty.html": {
+      "sha256": "748a682461378cac9f54d9765c810415588ff570fccf538712d240ecd2425905",
+      "size": 58180,
+      "etag": "\"69f21bd7-e344\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.rig.TwistProperty.html": {
+      "sha256": "0be6b7dbbfe5367cae998b4105f3f55b93cfc631fc0f942ea048549f3e5eb24d",
+      "size": 60703,
+      "etag": "\"69f21bd7-ed1f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.ActivateDeactivate.html": {
+      "sha256": "a589c2b9c0c8e6b89d66cc7e1604de380e0166740231ce0ca2d0f3fa6ed904d9",
+      "size": 60685,
+      "etag": "\"69f21bd7-ed0d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.AnimationPointsTypes.html": {
+      "sha256": "9e8205fb6353c6a2db5d5d66f6da37ad8a669c4995108452cd9605666a7234e6",
+      "size": 70929,
+      "etag": "\"69f21bd7-11511\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.AnimationUnbakingTool.html": {
+      "sha256": "b4577c711f462b82201cfc47ad037dab211648d8e395c5fc9cb73e00b0a46f2b",
+      "size": 57484,
+      "etag": "\"69f21bd7-e08c\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.AttractorTool.html": {
+      "sha256": "23adc4b98c683e30cf28138ca6a17643ca7e75f55598a8eff6c1491787d697c0",
+      "size": 61037,
+      "etag": "\"69f21bd7-ee6d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.AutoPhysicTool.html": {
+      "sha256": "a8d71b4503c2bcb2a3070d2bb5f70a776b50f344770c7a6c7083844273db464b",
+      "size": 58693,
+      "etag": "\"69f21bd7-e545\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.AutoPosingTool.html": {
+      "sha256": "c3a7137bf43838e23385cc462c0dbedb13cad6bbcad4a7dd4579302d7251ef69",
+      "size": 59485,
+      "etag": "\"69f21bd7-e85d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.BallisticTrajectory.html": {
+      "sha256": "fdd76ee4cdea1353f5c2c2f26e0c4946877187c5e8607f14a57f44b401250888",
+      "size": 56125,
+      "etag": "\"69f21bd7-db3d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.CollisionInfoForObject.html": {
+      "sha256": "9caca6df73be937d46e567a33cc778f7996b69e8b785f6b2cdd3b74a5052b200",
+      "size": 59778,
+      "etag": "\"69f21bd7-e982\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.DataKey.html": {
+      "sha256": "4a86cf4f16ed93b7cb480225522e3ce673378d6a23d0eef11835e805f4f0ad73",
+      "size": 62260,
+      "etag": "\"69f21bd7-f334\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.FulcrumCollisionInfo.html": {
+      "sha256": "21682351610f29fa817248ae5cc9d4f5a3cc7d92d96ff16b6db94fc05fafa33d",
+      "size": 69364,
+      "etag": "\"69f21bd7-10ef4\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.JointData.html": {
+      "sha256": "d43144545a6e2f6a7377318915720209a8d83629c7ec7407d7cd50cabdda9be8",
+      "size": 60459,
+      "etag": "\"69f21bd7-ec2b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.MirrorTool.html": {
+      "sha256": "0c85ab20c2388b402f25702832ab0e37f1bfc393b8ce1f4193d51cbbf8f66456",
+      "size": 59811,
+      "etag": "\"69f21bd7-e9a3\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.ObjectKey.html": {
+      "sha256": "7c223a67e9f28e41a50987a1e930549baefc106188f8678ea7f9323d4dcdf895",
+      "size": 62494,
+      "etag": "\"69f21bd7-f41e\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.RenderParameters.html": {
+      "sha256": "6c1ea604dc3eb63068a00ddd152cf2e5602146318c1453162d6bfb3f048b7183",
+      "size": 59052,
+      "etag": "\"69f21bd7-e6ac\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.RenderToFile.html": {
+      "sha256": "506412debd50cf997caaaaa8e7a9dc1e04ececea6a4e17b1c09dbab160d02ab8",
+      "size": 63137,
+      "etag": "\"69f21bd7-f6a1\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.RiggingModeTool.html": {
+      "sha256": "623122605fa8442a7029e9805bd4468d3a478003dbd6babb2e8c3eba46d561fc",
+      "size": 116948,
+      "etag": "\"69f21bd7-1c8d4\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.SelectionGroups.html": {
+      "sha256": "d2b8320f92dbf593b6ba8584a262e04d20df64f71378525f09a4ef471abb215e",
+      "size": 59787,
+      "etag": "\"69f21bd7-e98b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.Trajectory.html": {
+      "sha256": "bd5b579445b1d6908e103e20f09f8925fdd518e2c0cdbf51aa16913da09f285c",
+      "size": 55912,
+      "etag": "\"69f21bd7-da68\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.Args.html": {
+      "sha256": "f62b9cd4bf35a5961e0783e5f2d956e161997333432be87fe4d90abefa11523d",
+      "size": 66223,
+      "etag": "\"69f21bd7-102af\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.ArgsMode.html": {
+      "sha256": "0f4e1d6fd1e004750f6cf97c5723b8d9561f27bc3064edfb8f37f16e0744a7d1",
+      "size": 77861,
+      "etag": "\"69f21bd7-13025\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.AttractorGeneralSettings.html": {
+      "sha256": "d12150dea8f17ebf3831e2738a6e84778137343298b5a2ef0667865f430a765d",
+      "size": 64841,
+      "etag": "\"69f21bd7-fd49\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.GSAxisFlag.html": {
+      "sha256": "f33455de03d6f6f46ab73fb7a5291ed259e1032880361841b9f54ae21c1a351b",
+      "size": 76550,
+      "etag": "\"69f21bd7-12b06\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.GSAxisIndex.html": {
+      "sha256": "d11702cc9d604b575ff6b156ecea55bab1c10df00876d48e802bf7bbd6d39933",
+      "size": 74476,
+      "etag": "\"69f21bd7-122ec\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.GSPhysicsType.html": {
+      "sha256": "a6a49baec3b3e0e9de29734b29f029602ef289c55eb32dd6b2bb18839b9e2e25",
+      "size": 74017,
+      "etag": "\"69f21bd7-12121\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.GSRotationAxis.html": {
+      "sha256": "f133d412632e827059cc5ac65966b24c7589e2fa02a4cf942687e427d53e141e",
+      "size": 77072,
+      "etag": "\"69f21bd7-12d10\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.SpaceMode.html": {
+      "sha256": "51a8319919e30f997bda27948b0c2f5b676d2f810927a67a56e52fb42198a600",
+      "size": 73266,
+      "etag": "\"69f21bd7-11e32\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.attractor.attract.html": {
+      "sha256": "8eb40834e379ae737165cbdade2fc53f22665f189d2b8095721c7ac9793e0823",
+      "size": 52943,
+      "etag": "\"69f21bd7-cecf\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.mirror.Core.html": {
+      "sha256": "344537d9f5dd54ba0ce32e7936568ed13bd53f495748e3ac8ab7e198e3fb4e37",
+      "size": 65608,
+      "etag": "\"69f21bd7-10048\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.selection.Core.html": {
+      "sha256": "b4f2b8df07dd0cc3f59e39599e89f6325401208692ff867cbd0459bc60ea508a",
+      "size": 65970,
+      "etag": "\"69f21bd7-101b2\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.selection.Group.html": {
+      "sha256": "d4b075e8e7325c4ec22a94966a6ef4f52d6a2d7ecde70768bffb155f4b9b6b62",
+      "size": 58345,
+      "etag": "\"69f21bd7-e3e9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.tools.selection.Mode.html": {
+      "sha256": "42916b5676c98b2e851688f89e75db08c6f0d2cab425fe1e3d35cbd58ead4d51",
+      "size": 73977,
+      "etag": "\"69f21bd7-120f9\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ActivityAttribute.html": {
+      "sha256": "ac7942c8bebadad3463bdf70e8a353f374fd8b9e3fef84a2ad94e98b3a6b37fe",
+      "size": 57831,
+      "etag": "\"69f21bd7-e1e7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ActualityAttribute.html": {
+      "sha256": "368a0094e891e80e8cee01d93a2f0f2918b837b6f2d11d4b1ee91566c7d43766",
+      "size": 57924,
+      "etag": "\"69f21bd7-e244\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ActualityAttributeId.html": {
+      "sha256": "026d70251cc71a3f2ea0787f40fc2b18062eaf1ed6657c2ba19d781287de32c2",
+      "size": 56680,
+      "etag": "\"69f21bd7-dd68\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.Connection.html": {
+      "sha256": "2737f0dc6ca6b8c0ef8f101b3e13788d926a9818351240fc38fd1a2db161d8da",
+      "size": 70289,
+      "etag": "\"69f21bd7-11291\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantDataAttribute.html": {
+      "sha256": "cb9ce02ebc21e91033399f8c9a6a4c10f1f78c52f3b56163d43c02dfddab18c1",
+      "size": 57906,
+      "etag": "\"69f21bd7-e232\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantDataAttributeId.html": {
+      "sha256": "13e1198e540a037fe6dabdee227840202cf2ef7756e41b2e7e1bd608ef51f26d",
+      "size": 60389,
+      "etag": "\"69f21bd7-ebe5\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantDatas.html": {
+      "sha256": "7eca84442b34500ee274d25d02892a73c4f09648b6a4c929360de915aa6f15d1",
+      "size": 65192,
+      "etag": "\"69f21bd7-fea8\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantDatasId.html": {
+      "sha256": "00bb489c8627827c386317db15d2b3faac32aaec8009fd0866603426c01125ec",
+      "size": 56493,
+      "etag": "\"69f21bd7-dcad\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantSettingAttribute.html": {
+      "sha256": "e6effefc11c8effd6e0118f6b418b252a4531930c0c42568bc2dcc25b181a0d4",
+      "size": 57962,
+      "etag": "\"69f21bd7-e26a\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantSettingAttributeId.html": {
+      "sha256": "d255171915a57f665ee499b0cdaedc159120c84b3231ab1b2929132fed74217e",
+      "size": 60535,
+      "etag": "\"69f21bd7-ec77\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantSettings.html": {
+      "sha256": "af18f8d1ec2fdf0a738c18e083b5e4913c3d84bacba6d48b350706275b156467",
+      "size": 61552,
+      "etag": "\"69f21bd7-f070\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ConstantSettingsId.html": {
+      "sha256": "89dc04a92eaca664871530dfdd6760873f91fc0a54183d31382b0f2d833f8157",
+      "size": 56583,
+      "etag": "\"69f21bd7-dd07\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ExternalProperties.html": {
+      "sha256": "1caab4a72cd03c0df4b17e01efa78166a465b1d348f4c3ec6676448c473fdf14",
+      "size": 61054,
+      "etag": "\"69f21bd7-ee7e\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ExternalPropertiesId.html": {
+      "sha256": "ae1ebc050a9689f2a6a493145234f9bbdce3029e0c7b3076bce873468e6929a1",
+      "size": 56585,
+      "etag": "\"69f21bd7-dd09\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ExternalProperty.html": {
+      "sha256": "76dd551caf8794a52095627a85036d7eea231dfe0448ab8d8e6cf0288ab5772e",
+      "size": 80807,
+      "etag": "\"69f21bd7-13ba7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ExternalPropertyAttribute.html": {
+      "sha256": "11ac654c09c1b257bf3b711576090dd258d5365b2c2994a5d0af8b6244df95ac",
+      "size": 58071,
+      "etag": "\"69f21bd7-e2d7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ExternalPropertyAttributeId.html": {
+      "sha256": "24ac62b2ab508e4044d5389b425a130db0060481484ad541175bf92d6b77f665",
+      "size": 60598,
+      "etag": "\"69f21bd7-ecb6\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.Group.html": {
+      "sha256": "6857e12901ed53bcecdcfa0e71edc1f323ecacdfb83def7358be86028315efe3",
+      "size": 98616,
+      "etag": "\"69f21bd7-18138\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.GroupAttributeId.html": {
+      "sha256": "16fea157b33477994bcc42cc1db2322f7c57c98701028671455fc279b31a67dd",
+      "size": 60040,
+      "etag": "\"69f21bd7-ea88\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.GroupId.html": {
+      "sha256": "e87267ba75530401f9db53edcf60bccc523fd3f675d58e6ff4e34f8d5c4cf9b6",
+      "size": 66263,
+      "etag": "\"69f21bd7-102d7\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.HierarchyUpdate.html": {
+      "sha256": "8a342b2c3dba4a6ca4cf27e96a6a39b15c054bae3ce4029b342ec74424df6fd0",
+      "size": 59421,
+      "etag": "\"69f21bd7-e81d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.InterfaceAttribute.html": {
+      "sha256": "81eb25d1df796fcb40a1ff007fa8da6150843be5c81d1dc8028c4d7d1f6d7dc2",
+      "size": 63350,
+      "etag": "\"69f21bd7-f776\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.InterfaceAttributeSide.html": {
+      "sha256": "d22fac523241c271ac243df43c9bb6c848f29ab606844e6e355e9e0a233cd6ac",
+      "size": 74138,
+      "etag": "\"69f21bd7-1219a\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.InterfaceId.html": {
+      "sha256": "089338960094ab3c794fa98cabadb29166a3757b3efca3ea017021fd0fb197f7",
+      "size": 59355,
+      "etag": "\"69f21bd7-e7db\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.InterfaceNode.html": {
+      "sha256": "eeef6144d2dac1e45aa39fd5682f44f03263deccce5da0dfdde79d587a6f3eba",
+      "size": 68459,
+      "etag": "\"69f21bd7-10b6b\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.Node.html": {
+      "sha256": "89ca20b6016ab26897f7c66600323e4421f6cc6f27c5d408480154fbf81838d3",
+      "size": 83871,
+      "etag": "\"69f21bd7-1479f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.NodeAttribute.html": {
+      "sha256": "9cdc3115c519db6ffee8845a6ba562321b5d2808b29baef61005e258fd467dda",
+      "size": 74987,
+      "etag": "\"69f21bd7-124eb\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.Object.html": {
+      "sha256": "a47eb72f6fa893ee028b55d427dd72015fc73b9e6a2a523c5d4e1a81eb553d3d",
+      "size": 65198,
+      "etag": "\"69f21bd7-feae\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.ObjectGroup.html": {
+      "sha256": "d32ba62aae32e2129c685e3c50558b85f96ab0f000e90c9081a738ed42dc5891",
+      "size": 70140,
+      "etag": "\"69f21bd7-111fc\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.RegularData.html": {
+      "sha256": "e9fe924e2c7d48db0d4b6192b7353c3fa7b5f9ce1b598e33b0e4ec035544b840",
+      "size": 92729,
+      "etag": "\"69f21bd7-16a39\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.RegularDataAttribute.html": {
+      "sha256": "a9dd644148c0bb4ab391feaf04fd752d825d4bc869d692f354c6a956eb093dca",
+      "size": 57763,
+      "etag": "\"69f21bd7-e1a3\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.RegularDataAttributeId.html": {
+      "sha256": "256d91535f70cdbb0f53fc883b1810a566d4caab400f0aeaf5670cc13714b698",
+      "size": 56679,
+      "etag": "\"69f21bd7-dd67\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.RegularFunction.html": {
+      "sha256": "fd002e98c270f78f894a082fdfad0ff80a38bfd9603b968e367870eb2ef450c5",
+      "size": 81993,
+      "etag": "\"69f21bd7-14049\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.RegularFunctionAttribute.html": {
+      "sha256": "db0c707d2d174c92a682e06a7cb0bbce5985451c39afb5c9e8da9624eb17ce76",
+      "size": 57881,
+      "etag": "\"69f21bd7-e219\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.RegularFunctionAttributeId.html": {
+      "sha256": "d5c7c9eaa0e8029446252bea534840bf720825a59f4feb337e8b2a492255007b",
+      "size": 60472,
+      "etag": "\"69f21bd7-ec38\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.SettingData.html": {
+      "sha256": "81ed279504cbfe007ef0d091588ae91bc8ffaf86eaa060160a783785664034e5",
+      "size": 64746,
+      "etag": "\"69f21bd7-fcea\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.SettingDataAttribute.html": {
+      "sha256": "d1ae1ecb445a06425b102d72a464aa6666c622c2bf0fa4aa34af0fb00e390a99",
+      "size": 57721,
+      "etag": "\"69f21bd7-e179\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.SettingFunction.html": {
+      "sha256": "c185a7bbd4e51f1779c1e7616635931c9210990afc9e345a9ceb401cf153f863",
+      "size": 77539,
+      "etag": "\"69f21bd7-12ee3\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.SettingFunctionAttribute.html": {
+      "sha256": "a87d66213e81f62d61cccfdb57dcc1006d54d5f6594b223c60779b48e41e86fe",
+      "size": 61081,
+      "etag": "\"69f21bd7-ee99\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.SettingFunctionAttributeId.html": {
+      "sha256": "f883469990b2c58f95adf0d02c21acff343369df1d1cd7cb993e3a58fe5d9f1d",
+      "size": 62698,
+      "etag": "\"69f21bd7-f4ea\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.Update.html": {
+      "sha256": "486506e92c5897b5e6be2c15177ae678f4cca8f6c55be64ac0e051a5af233ff8",
+      "size": 68431,
+      "etag": "\"69f21bd7-10b4f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.update.UpdateGroup.html": {
+      "sha256": "b4bb495b4180654781c2a0bfb5572190d942aa02674ab361cbee14cc4df9901f",
+      "size": 86325,
+      "etag": "\"69f21bd7-15135\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.AnimationBoundary.html": {
+      "sha256": "b694068899266067f4975da8624f4dbbacd7dda9c6b6420a4176ca24f5a0e712",
+      "size": 59694,
+      "etag": "\"69f21bd7-e92e\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.Camera.html": {
+      "sha256": "0b7bdc0e7915df89bf8e6a6a051f4dbab0decec9c864924d6340d5698e31b47e",
+      "size": 60379,
+      "etag": "\"69f21bd7-ebdb\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.CameraType.html": {
+      "sha256": "38c5cb2ae14df3efdf05ddcec3e648a2d8384d797b5d3addd7bb30a09dd10ffb",
+      "size": 72714,
+      "etag": "\"69f21bd7-11c0a\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.DialogButton.html": {
+      "sha256": "63c19351d32ba375f16297187b78f69562138338bc7f03f56b0b7c4fbb048ba4",
+      "size": 60685,
+      "etag": "\"69f21bd7-ed0d\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.DialogManager.html": {
+      "sha256": "2211ab33276f2d1a53db5c126c77ffaa83a9fdea5fc60e0af96c34b97a284056",
+      "size": 78899,
+      "etag": "\"69f21bd7-13433\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.FileDialogManager.html": {
+      "sha256": "5ef6dcca6e36fbc0663a9399506fd3e6ddcd9bb331ad618ac407b80b2f6d6dd8",
+      "size": 66710,
+      "etag": "\"69f21bd7-10496\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.Scene.html": {
+      "sha256": "3ffe39689ba5328d278ec5ce0af01b63933e614a6cb166f60d167f87124ac2f8",
+      "size": 68942,
+      "etag": "\"69f21bd7-10d4e\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.SphericalCameraStruct.html": {
+      "sha256": "5e9c7435e6227f5fbd26fd94d9b2b5b0ebf4b65b98b85b1239a642dae5daa5b9",
+      "size": 59519,
+      "etag": "\"69f21bd7-e87f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.StandardButton.html": {
+      "sha256": "6915a5d97150f64ff22abcc46fcf1d06a78df2c612d25a7275feb54922eec8a9",
+      "size": 78737,
+      "etag": "\"69f21bd7-13391\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.Viewport.html": {
+      "sha256": "3e473f2a592a487e7e5e55faa60e57f1ad3d68a9d333191cdbdebc83df954ac8",
+      "size": 61189,
+      "etag": "\"69f21bd7-ef05\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.ViewportDomain.html": {
+      "sha256": "2c0cec1fee1a8e25174c0194d60e7a6741c34cc271ab2dea06a81f977840c947",
+      "size": 69572,
+      "etag": "\"69f21bd7-10fc4\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "csc.view.camera_utils.CameraData.html": {
+      "sha256": "8730af623e610668e271233dfe89827fde0b7af1cbb0728fc5a23981a9dea5d0",
+      "size": 60150,
+      "etag": "\"69f21bd7-eaf6\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "genindex.html": {
+      "sha256": "ca383ceb27e1e89fee8aad17172e5961ebf02c3962e12afce75e4cc3663be813",
+      "size": 686590,
+      "etag": "\"69f21bd7-a79fe\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "index.html": {
+      "sha256": "649cc7bc87caaad41b149b964fc4b19f456f6fca80392dd95a9ea7f734c6c596",
+      "size": 1149055,
+      "etag": "\"69f21bd7-11887f\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    },
+    "py-modindex.html": {
+      "sha256": "7e0266a655a67bd99a0d69c89d7b275229bbdc53bd3c92266075ec811d93b588",
+      "size": 56115,
+      "etag": "\"69f21bd7-db33\"",
+      "last_modified": "Wed, 29 Apr 2026 14:55:19 GMT"
+    }
+  },
+  "headers_enriched_utc": "2026-05-29T16:59:50Z"
+}

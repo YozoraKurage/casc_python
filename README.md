@@ -21,12 +21,18 @@ Cascadeur の Python アドオン開発のための作業フォルダです。
 casc_python/
 ├── README.md          ← このファイル
 ├── docs/              ← 日本語ドキュメント（本体）
+│   ├── api/           ← 手書きAPIリファレンス（要点・解説）
+│   └── api-reference/ ← 公式サイトのクローン（全209ページ md + raw-html ダンプ）
 ├── batch_export_fbx/  ← 自作ツール: .casc 一括 FBX 書き出し（git 管理対象）
+├── tools/
+│   └── api_docs/      ← 公式API定期ダンプ&差分ツール（dump/convert/diff）
 └── scripts/           ← Cascadeur 同梱スクリプトのコピー（解析用・git 管理対象外）
     ├── python/        ← csc(内蔵) / pycsc / common / commands / events / samples ...
     ├── parts/         ← プリセットオブジェクト(.partscasc)
     └── python_api_doc/← Sphinx 設定
 ```
+
+> API ドキュメントの更新（定期ダンプ→差分→整理）は [tools/api_docs/](tools/api_docs/README.md) を参照。
 
 > 実ファイルは `C:\Program Files\Cascadeur\resources\scripts`（読み取り専用）。`scripts/` はその解析用コピーで、**git 管理対象外**（`.gitignore`）です。自作ツール [batch_export_fbx/](batch_export_fbx/README.md) はリポジトリ最上階に置いています。
 
