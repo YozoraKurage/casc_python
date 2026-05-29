@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="docsearch:name" content="Cascadeur"/>
+    <meta name="docsearch:package_type" content=""/>
+    <meta name="docsearch:release" content="k"/>
+    <meta name="docsearch:version" content=""/>
+    
+    <title>csc.layers.Viewer &mdash; Cascadeur k documentation</title>
+    
+	<link rel="stylesheet" type="text/css" href="../_static/css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="../_static/css/webfonts.css"/>
+	<link rel="stylesheet" type="text/css" href="../_static/css/fontawesome.css"/>
+	<link rel="stylesheet" type="text/css" href="../_static/pygments.css"/>
+	<link rel="stylesheet" type="text/css" href="../_static/css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="../_static/css/custom.css"/>
+	<link rel="stylesheet" type="text/css" href="../_static/css/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/fonts.css" />
+    <!-- linktags -->
+    <link rel="index" title="Index" href="../genindex.html"/>
+    <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Cascadeur k documentation" href="#"/>
+    <link rel="up" title="CSC" href="../csc.html"/>
+    <link rel="next" title="csc.layers.Editor" href="csc.layers.Editor.html"/>
+    <link rel="prev" title="csc.layers.Layer" href="csc.layers.Layer.html"/>
+    <!-- /linktags -->
+    <!-- extrahead --><!-- /extrahead -->
+    <script src="../_static/js/modernizr.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="page-header">
+        <div class="page-header-inner">
+            <!--block pageheader-->
+            <div class="header">
+                <div class="header__logo">
+                    <a class="logo" href="/">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <div class="nav">
+                        <a href="#" class="nav-opener"><span class="nav-opener__burger"></span></a>
+                        <div class="nav__wrap">
+                            <div class="nav__item">
+                                <ul class="nav-list">
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link " href="/about">ABOUT</a>
+                                    </li>
+                                    <li class="nav-list__item dropdown">
+                                        <span class="nav-list__link dropdown-toggle " id="navbarDropdownLearn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Learn
+                                            <i class="nav-list__icon"></i>
+                                        </span>
+                                        <div class="dropdown-menu dropdown-menu--size-2 dropdown-menu--nav" aria-labelledby="navbarDropdownLearn">
+                                            <a href="/learn" class="dropdown-item">
+                                                Tutorials
+                                            </a>
+                                            <a href="https://www.youtube.com/watch?v=iE36NQbudBY&amp;list=PLmiOmBKF_5nLHyIlxlnWJoacBDba7puTe
+" target="_blank" rel="nofollow noopener noreferrer" class="dropdown-item">
+                                                Video lessons
+                                            </a>
+                                            <a class="dropdown-item" href="/help" target="_blank" rel="nofollow noopener noreferrer">Documentation
+                                            </a>
+                                            <a href="https://forum.cascadeur.com/articles" class="dropdown-item" target="_blank" rel="nofollow noopener noreferrer">
+                                                Articles
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-list__item dropdown">
+                                        <a class="nav-list__link dropdown-toggle" href="#" id="navbarDropdownCommunity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" rel="nofollow noopener noreferrer">
+                                            Community <i class="nav-list__icon"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu--size-2 dropdown-menu--nav" aria-labelledby="navbarDropdownCommunity">
+                                            <a href="http://forum.cascadeur.com/" target="_blank" rel="nofollow noopener noreferrer" class="dropdown-item">
+                                                Forum
+                                            </a>
+                                            <a href="https://discordapp.com/invite/Ymwjhpn
+" target="_blank" rel="nofollow noopener noreferrer" class="dropdown-item">
+                                                Discord
+                                            </a>
+                                            <a href="https://www.youtube.com/channel/UCwF6yYbIFJmB5ynAkzq9Psg" target="_blank" rel="nofollow noopener noreferrer" class="dropdown-item">
+                                                Youtube
+                                            </a>
+                                            <a href="https://twitter.com/Cascadeur_soft
+" target="_blank" rel="nofollow noopener noreferrer" class="dropdown-item">
+                                                Twitter
+                                            </a>
+                                            <a href="https://www.facebook.com/cascadeurEN/
+" target="_blank" rel="nofollow noopener noreferrer" class="dropdown-item">
+                                                Facebook
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="/blog" class="nav-list__link ">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item dropdown">
+                                        <a class="nav-list__link dropdown-toggle" href="#" id="navbarDropdownSupport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" rel="nofollow noopener noreferrer">
+                                            Support
+                                            <i class="nav-list__icon"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu--size-3 dropdown-menu--nav" aria-labelledby="navbarDropdownSupport">
+                                            <a href="https://nekki.helpshift.com/a/cascadeur/?l=en&amp;contact=1" class="dropdown-item" target="_blank" rel="nofollow noopener noreferrer">
+                                                Report a bug
+                                            </a>
+                                            <a href="mailto:info@cascadeur.com" class="dropdown-item">
+                                                Contact us
+                                            </a>
+                                            <a href="https://trello.com/b/oNlIizJh/cascadeur-roadmap" class="dropdown-item" target="_blank" rel="nofollow noopener noreferrer">
+                                                Road map
+                                            </a>
+                                            <a href="/help/faq" class="dropdown-item" target="_blank" rel="nofollow noopener noreferrer">
+                                                FAQ
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="nav__lang">
+                                    <div class="nav__lang__title">Language</div>
+
+                                    <div class="nav__lang__list">
+                                        <span class="dropdown-item dropdown-item--active lang-url nav__lang__link" data-url="/change-language?lang=en&amp;target=%2F">English</span>
+                                    </div>
+                                </div>
+                                <div class="nav__download">
+                                    <a href="/plans" class="button button--blue button--with-animation">
+                                        Get started
+                                        <span class="button--loading-icon"><b></b><b></b><b></b></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/plans" class="button button--blue button--with-animation">
+                        Get started
+                        <span class="button--loading-icon"><b></b><b></b><b></b></span>
+                    </a>
+                </nav>
+                <div class="header__right-part">
+                    <div class="header__lang-wrapper dropdown">
+                        <div class="header__lang dropdown-toggle" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M20 5.07773C17.6643 6.42146 14.8779 7.09207 12.0552 6.98983C9.19739 7.00846 6.39619 6.31649 4 5" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M4 18.93C6.33684 17.5814 9.12707 16.9079 11.954 17.0101C14.8084 16.9949 17.6055 17.6866 20 19" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M1.26587 12H22.8809" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M11.9998 22.8717C14.2425 22.8717 16.0606 17.992 16.0606 11.9726C16.0606 5.95312 14.2425 1.07339 11.9998 1.07339C9.75706 1.07339 7.93896 5.95312 7.93896 11.9726C7.93896 17.992 9.75706 22.8717 11.9998 22.8717Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu--right dropdown-menu--size-1" aria-labelledby="dropdownLang">
+                            <span class="dropdown-item dropdown-item--active lang-url" data-url="/change-language?lang=en&amp;target=%2F">English</span>
+                        </div>
+                    </div>
+
+                    <div class="header__account-wrapper dropdown">
+                        <div class="header__account dropdown-toggle header__account--icon" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div>Е</div>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu--right dropdown-menu--size-1" aria-labelledby="dropdownAccount">
+                            <a class="dropdown-item" href="/profile">
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="/logout">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/block pageheader-->
+        </div><!--/.page-header-inner-->
+    </div><!--/.page-header-inner-->
+
+    
+
+    <div class="page-main">
+        <div class="page-main-inner">
+            <div class="page-main-navigation">
+                <nav>
+                    <input type="checkbox" id="toggleToc" class="toc-checkbox">
+                    <div class="toc-header"><div class="toc-title">
+                            <a class="toc-title-project" href="../index.html">Cascadeur</a></div><div class="toc-actions">
+                            <label for="toggleToc" class="toc-toggle">
+                                Menu
+                            </label>
+                        </div>
+                    </div>
+                    <div class="toc-collapse">
+                        <!-- searchbox.html -->
+<div id="searchbox" class="toc-search" role="search">
+    <form id="search-form" action="../search.html" autocomplete="off" method="get">
+        <input class="form-control" type="text" name="q" placeholder="Search this project" aria-label="Search this project" id="searchinput" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+                        <!-- /searchbox.html -->
+                        <div class="toc" role="navigation" aria-label="main navigation">
+                            <!-- menu -->
+                            <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../csc.html">CSC</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="csc.Guid.html">csc.Guid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.Quaternion.html">csc.math.Quaternion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.Rotation.html">csc.math.Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.transform_point.html">csc.math.transform_point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.inverse_transform_point.html">csc.math.inverse_transform_point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.basic_transform_from_triangle.html">csc.math.basic_transform_from_triangle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.project_point_on_basic_line.html">csc.math.project_point_on_basic_line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.euler_angles_to_quaternion_x_y_z.html">csc.math.euler_angles_to_quaternion_x_y_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.modify_position_by_matrix.html">csc.math.modify_position_by_matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.transforms_difference.html">csc.math.transforms_difference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.transform_point.html">csc.math.transform_point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.get_m3f_diag.html">csc.math.get_m3f_diag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.physics.PosMass.html">csc.physics.PosMass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.physics.inertia_tensor.html">csc.physics.inertia_tensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.DirectionValue.html">csc.DirectionValue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.Direction.html">csc.Direction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.Version.html">csc.Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.SystemVariables.html">csc.SystemVariables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.ScaledTransform.html">csc.math.ScaledTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.OrthogonalTransform.html">csc.math.OrthogonalTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.Triangle.html">csc.math.Triangle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.math.SizesInterval.html">csc.math.SizesInterval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.Type.html">csc.parts.Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.Info.html">csc.parts.Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.GroupInfo.html">csc.parts.GroupInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.Buffer.html">csc.parts.Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.ActivateDeactivate.html">csc.tools.ActivateDeactivate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.selection.Mode.html">csc.tools.selection.Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.selection.Group.html">csc.tools.selection.Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.selection.Core.html">csc.tools.selection.Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.SelectionGroups.html">csc.tools.SelectionGroups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.mirror.Core.html">csc.tools.mirror.Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.MirrorTool.html">csc.tools.MirrorTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.JointData.html">csc.tools.JointData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.ObjectKey.html">csc.tools.ObjectKey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.DataKey.html">csc.tools.DataKey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.RiggingModeTool.html">csc.tools.RiggingModeTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.SpaceMode.html">csc.tools.attractor.SpaceMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.ArgsMode.html">csc.tools.attractor.ArgsMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.GSRotationAxis.html">csc.tools.attractor.GSRotationAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.GSAxisFlag.html">csc.tools.attractor.GSAxisFlag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.GSAxisIndex.html">csc.tools.attractor.GSAxisIndex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.GSPhysicsType.html">csc.tools.attractor.GSPhysicsType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.AttractorGeneralSettings.html">csc.tools.attractor.AttractorGeneralSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.Args.html">csc.tools.attractor.Args</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.attractor.attract.html">csc.tools.attractor.attract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.AttractorTool.html">csc.tools.AttractorTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.AutoPhysicTool.html">csc.tools.AutoPhysicTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.AnimationPointsTypes.html">csc.tools.AnimationPointsTypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.CollisionInfoForObject.html">csc.tools.CollisionInfoForObject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.FulcrumCollisionInfo.html">csc.tools.FulcrumCollisionInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.BallisticTrajectory.html">csc.tools.BallisticTrajectory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.Trajectory.html">csc.tools.Trajectory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.AutoPosingTool.html">csc.tools.AutoPosingTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.AnimationUnbakingTool.html">csc.tools.AnimationUnbakingTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.RenderParameters.html">csc.tools.RenderParameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.tools.RenderToFile.html">csc.tools.RenderToFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.StandardButton.html">csc.view.StandardButton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.DialogButton.html">csc.view.DialogButton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.DialogManager.html">csc.view.DialogManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.FileDialogManager.html">csc.view.FileDialogManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.Scene.html">csc.view.Scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.AnimationBoundary.html">csc.view.AnimationBoundary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.CameraType.html">csc.view.CameraType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.SphericalCameraStruct.html">csc.view.SphericalCameraStruct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.Camera.html">csc.view.Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.ViewportDomain.html">csc.view.ViewportDomain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.Viewport.html">csc.view.Viewport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.view.camera_utils.CameraData.html">csc.view.camera_utils.CameraData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.ActionManager.html">csc.app.ActionManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.DataSourceManager.html">csc.app.DataSourceManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.SettingsManager.html">csc.app.SettingsManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.SceneManager.html">csc.app.SceneManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.SceneTool.html">csc.app.SceneTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.CascadeurTool.html">csc.app.CascadeurTool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.ToolsManager.html">csc.app.ToolsManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.Application.html">csc.app.Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.ProjectLoader.html">csc.app.ProjectLoader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.StatusManager.html">csc.app.StatusManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.app.SimpleStatusInformer.html">csc.app.SimpleStatusInformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.Type.html">csc.parts.Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.Info.html">csc.parts.Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.GroupInfo.html">csc.parts.GroupInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.SceneClipboard.html">csc.parts.SceneClipboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.parts.Buffer.html">csc.parts.Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.external.ExtraDatas.html">csc.external.ExtraDatas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.external.FbxDatas.html">csc.external.FbxDatas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.fbx.FbxSettingsMode.html">csc.fbx.FbxSettingsMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.fbx.FbxSettingsAxis.html">csc.fbx.FbxSettingsAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.fbx.FbxSettings.html">csc.fbx.FbxSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.fbx.FbxLoader.html">csc.fbx.FbxLoader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.fbx.FbxSceneLoader.html">csc.fbx.FbxSceneLoader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.rig.AddElementData.html">csc.rig.AddElementData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.rig.BoneProperty.html">csc.rig.BoneProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.rig.TwistProperty.html">csc.rig.TwistProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.rig.TwistBoneProperty.html">csc.rig.TwistBoneProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.rig.QrtData.html">csc.rig.QrtData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Header.html">csc.layers.Header</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.ItemVariant.html">csc.layers.ItemVariant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Folder.html">csc.layers.Folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Layer.html">csc.layers.Layer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">csc.layers.Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Editor.html">csc.layers.Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Selector.html">csc.layers.Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.LayersContainer.html">csc.layers.LayersContainer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.UserLabelData.html">csc.layers.UserLabelData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Layers.html">csc.layers.Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.Cycle.html">csc.layers.Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.CyclesViewer.html">csc.layers.CyclesViewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.CyclesEditor.html">csc.layers.CyclesEditor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.LayersSelectionChanger.html">csc.layers.LayersSelectionChanger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Interpolation.html">csc.layers.layer.Interpolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Tangents.html">csc.layers.layer.Tangents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.IkFk.html">csc.layers.layer.IkFk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Fixation.html">csc.layers.layer.Fixation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Common.html">csc.layers.layer.Common</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Key.html">csc.layers.layer.Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Interval.html">csc.layers.layer.Interval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Section.html">csc.layers.layer.Section</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.layer.Cell.html">csc.layers.layer.Cell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.index.FramesInterval.html">csc.layers.index.FramesInterval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.index.FramesIndices.html">csc.layers.index.FramesIndices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.index.CellIndex.html">csc.layers.index.CellIndex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.index.RectIndicesContainer.html">csc.layers.index.RectIndicesContainer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.layers.index.IndicesContainer.html">csc.layers.index.IndicesContainer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.Data.html">csc.model.Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.Setting.html">csc.model.Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.ClusterViewer.html">csc.model.ClusterViewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.ClusterEditor.html">csc.model.ClusterEditor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.DataViewer.html">csc.model.DataViewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.DataEditor.html">csc.model.DataEditor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.BehaviourViewer.html">csc.model.BehaviourViewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.BehaviourEditor.html">csc.model.BehaviourEditor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.ModelViewer.html">csc.model.ModelViewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.ModelEditor.html">csc.model.ModelEditor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.DataMode.html">csc.model.DataMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.SettingMode.html">csc.model.SettingMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.ObjectId.html">csc.model.ObjectId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.DataId.html">csc.model.DataId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.BehaviourId.html">csc.model.BehaviourId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.SettingId.html">csc.model.SettingId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.HyperedgeId.html">csc.model.HyperedgeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.SettingFunctionId.html">csc.model.SettingFunctionId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.LerpMode.html">csc.model.LerpMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.DescriptionTerm.html">csc.model.DescriptionTerm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.CustomSelectionPolicy.html">csc.model.CustomSelectionPolicy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.PropertyType.html">csc.model.PropertyType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.PathName.html">csc.model.PathName</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.model.ClustersEdge.html">csc.model.ClustersEdge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Pivot.html">csc.domain.Pivot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Selection.html">csc.domain.Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Selector.html">csc.domain.Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.AssetId.html">csc.domain.AssetId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Asset.html">csc.domain.Asset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.LocalInterpolator.html">csc.domain.LocalInterpolator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.SceneUpdater.html">csc.domain.SceneUpdater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.ProcessorsStorage.html">csc.domain.ProcessorsStorage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.IMessageHandler.html">csc.domain.IMessageHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Scene.html">csc.domain.Scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Session.html">csc.domain.Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Tool_object_id.html">csc.domain.Tool_object_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.StatePivot.html">csc.domain.StatePivot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.FrameActionOnChange.html">csc.domain.FrameActionOnChange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.IntervalActionOnChange.html">csc.domain.IntervalActionOnChange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.SelectorMode.html">csc.domain.SelectorMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.SelectorFilter.html">csc.domain.SelectorFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.Select.html">csc.domain.Select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.assets.Vertex.html">csc.domain.assets.Vertex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.assets.Mesh.html">csc.domain.assets.Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.assets.MeshDependency.html">csc.domain.assets.MeshDependency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.assets.MeshBlendshape.html">csc.domain.assets.MeshBlendshape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.domain.assets.AssetsManager.html">csc.domain.assets.AssetsManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.NodeAttribute.html">csc.update.NodeAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.RegularDataAttribute.html">csc.update.RegularDataAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ActualityAttribute.html">csc.update.ActualityAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantDataAttribute.html">csc.update.ConstantDataAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantSettingAttribute.html">csc.update.ConstantSettingAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ExternalPropertyAttribute.html">csc.update.ExternalPropertyAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.SettingFunctionAttribute.html">csc.update.SettingFunctionAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.InterfaceAttributeSide.html">csc.update.InterfaceAttributeSide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.InterfaceAttribute.html">csc.update.InterfaceAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.RegularFunctionAttribute.html">csc.update.RegularFunctionAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ActivityAttribute.html">csc.update.ActivityAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.SettingDataAttribute.html">csc.update.SettingDataAttribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.Node.html">csc.update.Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.InterfaceNode.html">csc.update.InterfaceNode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantDatas.html">csc.update.ConstantDatas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantSettings.html">csc.update.ConstantSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ExternalProperties.html">csc.update.ExternalProperties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.RegularFunction.html">csc.update.RegularFunction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.SettingData.html">csc.update.SettingData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.SettingFunction.html">csc.update.SettingFunction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.Object.html">csc.update.Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.RegularData.html">csc.update.RegularData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.Group.html">csc.update.Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ObjectGroup.html">csc.update.ObjectGroup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.UpdateGroup.html">csc.update.UpdateGroup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.HierarchyUpdate.html">csc.update.HierarchyUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.Update.html">csc.update.Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.RegularFunctionAttributeId.html">csc.update.RegularFunctionAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.RegularDataAttributeId.html">csc.update.RegularDataAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ActualityAttributeId.html">csc.update.ActualityAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.SettingFunctionAttributeId.html">csc.update.SettingFunctionAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.GroupId.html">csc.update.GroupId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.GroupAttributeId.html">csc.update.GroupAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ExternalPropertiesId.html">csc.update.ExternalPropertiesId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ExternalProperty.html">csc.update.ExternalProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ExternalPropertyAttributeId.html">csc.update.ExternalPropertyAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantDatasId.html">csc.update.ConstantDatasId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantDataAttributeId.html">csc.update.ConstantDataAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantSettingsId.html">csc.update.ConstantSettingsId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.ConstantSettingAttributeId.html">csc.update.ConstantSettingAttributeId</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.Connection.html">csc.update.Connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csc.update.InterfaceId.html">csc.update.InterfaceId</a></li>
+</ul>
+</li>
+</ul>
+
+                            <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+                            <ul>
+<li><a class="reference internal" href="#">csc.layers.Viewer</a><ul>
+<li><a class="reference internal" href="#csc.layers.Viewer"><code class="docutils literal notranslate"><span class="pre">Viewer</span></code></a><ul>
+<li><a class="reference internal" href="#csc.layers.Viewer.__init__"><code class="docutils literal notranslate"><span class="pre">Viewer.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.__annotations__"><code class="docutils literal notranslate"><span class="pre">Viewer.__annotations__</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Viewer.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.__module__"><code class="docutils literal notranslate"><span class="pre">Viewer.__module__</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.actual_key_pos"><code class="docutils literal notranslate"><span class="pre">Viewer.actual_key_pos()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.all_child_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.all_child_ids()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.all_included_layer_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.all_included_layer_ids()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.all_layer_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.all_layer_ids()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.all_parent_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.all_parent_ids()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.default_layer_id"><code class="docutils literal notranslate"><span class="pre">Viewer.default_layer_id()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.find_folder"><code class="docutils literal notranslate"><span class="pre">Viewer.find_folder()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.find_layer"><code class="docutils literal notranslate"><span class="pre">Viewer.find_layer()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.folder"><code class="docutils literal notranslate"><span class="pre">Viewer.folder()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.folders_map"><code class="docutils literal notranslate"><span class="pre">Viewer.folders_map()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.for_all_ordered_items"><code class="docutils literal notranslate"><span class="pre">Viewer.for_all_ordered_items()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.frames_count"><code class="docutils literal notranslate"><span class="pre">Viewer.frames_count()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.has_item"><code class="docutils literal notranslate"><span class="pre">Viewer.has_item()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.header"><code class="docutils literal notranslate"><span class="pre">Viewer.header()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.is_deep_child"><code class="docutils literal notranslate"><span class="pre">Viewer.is_deep_child()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.item"><code class="docutils literal notranslate"><span class="pre">Viewer.item()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.last_key_pos"><code class="docutils literal notranslate"><span class="pre">Viewer.last_key_pos()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.layer"><code class="docutils literal notranslate"><span class="pre">Viewer.layer()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.layer_id_by_obj_id"><code class="docutils literal notranslate"><span class="pre">Viewer.layer_id_by_obj_id()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.layer_id_by_obj_id_or_null"><code class="docutils literal notranslate"><span class="pre">Viewer.layer_id_by_obj_id_or_null()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.layer_ids_by_obj_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.layer_ids_by_obj_ids()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.layers_indices"><code class="docutils literal notranslate"><span class="pre">Viewer.layers_indices()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.layers_map"><code class="docutils literal notranslate"><span class="pre">Viewer.layers_map()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.merged_layer"><code class="docutils literal notranslate"><span class="pre">Viewer.merged_layer()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.obj_ids_by_layer_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.obj_ids_by_layer_ids()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.pos_in_parent"><code class="docutils literal notranslate"><span class="pre">Viewer.pos_in_parent()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.root_id"><code class="docutils literal notranslate"><span class="pre">Viewer.root_id()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.significant_frames"><code class="docutils literal notranslate"><span class="pre">Viewer.significant_frames()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.top_layer_id"><code class="docutils literal notranslate"><span class="pre">Viewer.top_layer_id()</span></code></a></li>
+<li><a class="reference internal" href="#csc.layers.Viewer.unlocked_layer_ids"><code class="docutils literal notranslate"><span class="pre">Viewer.unlocked_layer_ids()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="page-main-content">
+                <div class="rst-content">
+                    <!-- pager-hidden.html -->
+                    
+        <a class="no-focus" accesskey="p" href="csc.layers.Layer.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="n" href="csc.layers.Editor.html" tabindex="-1"></a>
+                    <!-- /pager-hidden.html -->
+                    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                        <div itemprop="articleBody">
+                            <!-- body -->
+    <section id="csc-layers-viewer">
+<h1>csc.layers.Viewer<a class="headerlink" href="#csc-layers-viewer" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="csc.layers.Viewer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">csc.layers.</span></span><span class="sig-name descname"><span class="pre">Viewer</span></span><a class="headerlink" href="#csc.layers.Viewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Viewer class</p>
+<p>This class contains all methods and properties that describe the structure of scene objects’ interpolation properties.
+The structure is represented in the hierarchy of layers divided by folders.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>top_layer_id</strong> – overridden method by ItemId || ItemId[]</p></li>
+<li><p><strong>merged_layer</strong> – overridden method like static and member LayerId[]</p></li>
+<li><p><strong>last_key_pos</strong> – overridden method by LayerId[], -&gt; Layer</p></li>
+<li><p><strong>frames_count</strong> – overridden method by LayerId[], -&gt; int</p></li>
+<li><p><strong>significant_frames</strong> – overridden method by LayerId{}, -&gt; int{}</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#csc.layers.Viewer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.__init__" title="csc.layers.Viewer.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.actual_key_pos" title="csc.layers.Viewer.actual_key_pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">actual_key_pos</span></code></a>(self, pos)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.all_child_ids" title="csc.layers.Viewer.all_child_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">all_child_ids</span></code></a>(self, id)</p></td>
+<td><p>-&gt; ItemId[]</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.all_included_layer_ids" title="csc.layers.Viewer.all_included_layer_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">all_included_layer_ids</span></code></a>(self, items[, ...])</p></td>
+<td><p>items : ItemId[] | ignoreLocked : bool (false) | -&gt; LayerId[]</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.all_layer_ids" title="csc.layers.Viewer.all_layer_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">all_layer_ids</span></code></a>(self)</p></td>
+<td><p>-&gt; LayerId[]</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.all_parent_ids" title="csc.layers.Viewer.all_parent_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">all_parent_ids</span></code></a>(self, id)</p></td>
+<td><p>-&gt; FolderId[]</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.default_layer_id" title="csc.layers.Viewer.default_layer_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_layer_id</span></code></a>(self)</p></td>
+<td><p>-&gt; LayerId</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.find_folder" title="csc.layers.Viewer.find_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_folder</span></code></a>(self, id)</p></td>
+<td><p>id : FolderId | -&gt; Folder</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.find_layer" title="csc.layers.Viewer.find_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_layer</span></code></a>(self, id)</p></td>
+<td><p>id : LayerId | -&gt; Layer</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.folder" title="csc.layers.Viewer.folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folder</span></code></a>(self, id)</p></td>
+<td><p>id : FolderId | -&gt; Folder</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.folders_map" title="csc.layers.Viewer.folders_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders_map</span></code></a>(self)</p></td>
+<td><p>-&gt; &lt;FolderId, Folder&gt;{}</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.for_all_ordered_items" title="csc.layers.Viewer.for_all_ordered_items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">for_all_ordered_items</span></code></a>(self, arg0)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.frames_count" title="csc.layers.Viewer.frames_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frames_count</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.has_item" title="csc.layers.Viewer.has_item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_item</span></code></a>(self, id)</p></td>
+<td><p>-&gt; bool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.header" title="csc.layers.Viewer.header"><code class="xref py py-obj docutils literal notranslate"><span class="pre">header</span></code></a>(self, id)</p></td>
+<td><p>id : ItemId | -&gt; Header</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.is_deep_child" title="csc.layers.Viewer.is_deep_child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_deep_child</span></code></a>(self, item_id, folder_id)</p></td>
+<td><p>-&gt; bool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.item" title="csc.layers.Viewer.item"><code class="xref py py-obj docutils literal notranslate"><span class="pre">item</span></code></a>(self, id)</p></td>
+<td><p>id : ItemId | -&gt; ItemVariant</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.last_key_pos" title="csc.layers.Viewer.last_key_pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">last_key_pos</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.layer" title="csc.layers.Viewer.layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layer</span></code></a>(self, id)</p></td>
+<td><p>id : LayerId | -&gt; Layer</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.layer_id_by_obj_id" title="csc.layers.Viewer.layer_id_by_obj_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layer_id_by_obj_id</span></code></a>(self, id)</p></td>
+<td><p>id : csc.model.ObjectId | -&gt; LayerId</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.layer_id_by_obj_id_or_null" title="csc.layers.Viewer.layer_id_by_obj_id_or_null"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layer_id_by_obj_id_or_null</span></code></a>(self, id)</p></td>
+<td><p>id : csc.model.ObjectId | -&gt; LayerId</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.layer_ids_by_obj_ids" title="csc.layers.Viewer.layer_ids_by_obj_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layer_ids_by_obj_ids</span></code></a>(self, ids)</p></td>
+<td><p>ids : csc.model.ObjectId[] | -&gt; LayerId{}</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.layers_indices" title="csc.layers.Viewer.layers_indices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers_indices</span></code></a>(self, id_arr, ignore_locked)</p></td>
+<td><p>-&gt; IndicesContainer</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.layers_map" title="csc.layers.Viewer.layers_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers_map</span></code></a>(self)</p></td>
+<td><p>-&gt; &lt;LayerId, Layer&gt;{}</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.merged_layer" title="csc.layers.Viewer.merged_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">merged_layer</span></code></a>(self, scene, ids, normalize)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.obj_ids_by_layer_ids" title="csc.layers.Viewer.obj_ids_by_layer_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">obj_ids_by_layer_ids</span></code></a>(self, id_arr)</p></td>
+<td><p>-&gt; LayerId[]</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.pos_in_parent" title="csc.layers.Viewer.pos_in_parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pos_in_parent</span></code></a>(self, id)</p></td>
+<td><p>-&gt; int</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.root_id" title="csc.layers.Viewer.root_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">root_id</span></code></a>(self)</p></td>
+<td><p>-&gt; FolderId</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.significant_frames" title="csc.layers.Viewer.significant_frames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">significant_frames</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.top_layer_id" title="csc.layers.Viewer.top_layer_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">top_layer_id</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../csc.html#csc.layers.Viewer.unlocked_layer_ids" title="csc.layers.Viewer.unlocked_layer_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unlocked_layer_ids</span></code></a>(self, id_arr)</p></td>
+<td><p>-&gt; LayerId[]</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="csc.layers.Viewer.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#csc.layers.Viewer.__annotations__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="csc.layers.Viewer.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'csc.layers'</span></em><a class="headerlink" href="#csc.layers.Viewer.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.actual_key_pos">
+<span class="sig-name descname"><span class="pre">actual_key_pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.actual_key_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.all_child_ids">
+<span class="sig-name descname"><span class="pre">all_child_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.all_child_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; ItemId[]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.all_included_layer_ids">
+<span class="sig-name descname"><span class="pre">all_included_layer_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_locked</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.all_included_layer_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>items : ItemId[] | ignoreLocked : bool (false) | -&gt; LayerId[]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.all_layer_ids">
+<span class="sig-name descname"><span class="pre">all_layer_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.all_layer_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; LayerId[]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.all_parent_ids">
+<span class="sig-name descname"><span class="pre">all_parent_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.all_parent_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; FolderId[]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.default_layer_id">
+<span class="sig-name descname"><span class="pre">default_layer_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.default_layer_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; LayerId</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.find_folder">
+<span class="sig-name descname"><span class="pre">find_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.find_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : FolderId | -&gt; Folder</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.find_layer">
+<span class="sig-name descname"><span class="pre">find_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.find_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : LayerId | -&gt; Layer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.folder">
+<span class="sig-name descname"><span class="pre">folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : FolderId | -&gt; Folder</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.folders_map">
+<span class="sig-name descname"><span class="pre">folders_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../csc.html#csc.layers.Folder" title="csc.layers.Folder"><span class="pre">csc.layers.Folder</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.folders_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; &lt;FolderId, Folder&gt;{}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.for_all_ordered_items">
+<span class="sig-name descname"><span class="pre">for_all_ordered_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.for_all_ordered_items" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.frames_count">
+<span class="sig-name descname"><span class="pre">frames_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#csc.layers.Viewer.frames_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>frames_count(self: csc.layers.Viewer) -&gt; int</p></li>
+<li><p>frames_count(self: csc.layers.Viewer, id_arr: list[csc.Guid]) -&gt; int</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.has_item">
+<span class="sig-name descname"><span class="pre">has_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.has_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.header">
+<span class="sig-name descname"><span class="pre">header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.header" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : ItemId | -&gt; Header</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.is_deep_child">
+<span class="sig-name descname"><span class="pre">is_deep_child</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.is_deep_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.item">
+<span class="sig-name descname"><span class="pre">item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../csc.html#csc.layers.ItemVariant" title="csc.layers.ItemVariant"><span class="pre">csc.layers.ItemVariant</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.item" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : ItemId | -&gt; ItemVariant</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.last_key_pos">
+<span class="sig-name descname"><span class="pre">last_key_pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#csc.layers.Viewer.last_key_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>last_key_pos(self: csc.layers.Viewer) -&gt; int</p></li>
+<li><p>last_key_pos(self: csc.layers.Viewer, id_arr: list[csc.Guid]) -&gt; int</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.layer">
+<span class="sig-name descname"><span class="pre">layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : LayerId | -&gt; Layer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.layer_id_by_obj_id">
+<span class="sig-name descname"><span class="pre">layer_id_by_obj_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self:</span> <span class="pre">csc.layers.Viewer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id:</span> <span class="pre">common::GenericId&lt;domain::scene::model::ModelObject&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.layer_id_by_obj_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : csc.model.ObjectId | -&gt; LayerId</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.layer_id_by_obj_id_or_null">
+<span class="sig-name descname"><span class="pre">layer_id_by_obj_id_or_null</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self:</span> <span class="pre">csc.layers.Viewer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id:</span> <span class="pre">common::GenericId&lt;domain::scene::model::ModelObject&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.layer_id_by_obj_id_or_null" title="Permalink to this definition">¶</a></dt>
+<dd><p>id : csc.model.ObjectId | -&gt; LayerId</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.layer_ids_by_obj_ids">
+<span class="sig-name descname"><span class="pre">layer_ids_by_obj_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self:</span> <span class="pre">csc.layers.Viewer,</span> <span class="pre">ids:</span> <span class="pre">list[common::GenericId&lt;domain::scene::model::ModelObject&gt;]</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.14)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.layer_ids_by_obj_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>ids : csc.model.ObjectId[] | -&gt; LayerId{}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.layers_indices">
+<span class="sig-name descname"><span class="pre">layers_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self:</span> <span class="pre">csc.layers.Viewer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_arr:</span> <span class="pre">domain::scene::layers::index::IndicesContainer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_locked:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">domain::scene::layers::index::IndicesContainer</span></span></span><a class="headerlink" href="#csc.layers.Viewer.layers_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; IndicesContainer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.layers_map">
+<span class="sig-name descname"><span class="pre">layers_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../csc.html#csc.layers.Layer" title="csc.layers.Layer"><span class="pre">csc.layers.Layer</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.layers_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; &lt;LayerId, Layer&gt;{}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.merged_layer">
+<span class="sig-name descname"><span class="pre">merged_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self:</span> <span class="pre">csc.layers.Viewer,</span> <span class="pre">scene:</span> <span class="pre">domain::scene::Scene,</span> <span class="pre">ids:</span> <span class="pre">list[csc.Guid],</span> <span class="pre">normalize:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../csc.html#csc.layers.Layer" title="csc.layers.Layer"><span class="pre">csc.layers.Layer</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.merged_layer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.obj_ids_by_layer_ids">
+<span class="sig-name descname"><span class="pre">obj_ids_by_layer_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list[common::GenericId&lt;domain::scene::model::ModelObject&gt;]</span></span></span><a class="headerlink" href="#csc.layers.Viewer.obj_ids_by_layer_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; LayerId[]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.pos_in_parent">
+<span class="sig-name descname"><span class="pre">pos_in_parent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.pos_in_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.root_id">
+<span class="sig-name descname"><span class="pre">root_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a></span></span><a class="headerlink" href="#csc.layers.Viewer.root_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; FolderId</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.significant_frames">
+<span class="sig-name descname"><span class="pre">significant_frames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#csc.layers.Viewer.significant_frames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>significant_frames(self: csc.layers.Viewer) -&gt; domain::scene::layers::index::FramesIndices</p></li>
+<li><p>significant_frames(self: csc.layers.Viewer, id_arr: set[csc.Guid]) -&gt; domain::scene::layers::index::FramesIndices</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.top_layer_id">
+<span class="sig-name descname"><span class="pre">top_layer_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#csc.layers.Viewer.top_layer_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>top_layer_id(self: csc.layers.Viewer, id: csc.Guid) -&gt; csc.Guid</p></li>
+<li><p>top_layer_id(self: csc.layers.Viewer, id_arr: list[csc.Guid]) -&gt; csc.Guid</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="csc.layers.Viewer.unlocked_layer_ids">
+<span class="sig-name descname"><span class="pre">unlocked_layer_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../csc.html#csc.layers.Viewer" title="csc.layers.Viewer"><span class="pre">csc.layers.Viewer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../csc.html#csc.Guid" title="csc.Guid"><span class="pre">csc.Guid</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#csc.layers.Viewer.unlocked_layer_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; LayerId[]</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+<!-- /body -->
+                        </div>
+                    </div>
+                    <!-- pager.html -->
+                    <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="csc.layers.Layer.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="csc.layers.Editor.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+                    <!-- /pager.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="page-footer">
+        <!-- footer.html -->
+        <footer class="main-footer">
+    <div class="container">
+        <div class="main-footer__row">
+            <div class="main-footer__col main-footer__col--first">
+                <div class="main-footer__title">Social
+                </div>
+                <ul class="footer-socials footer-socials--main">
+                    <li class="footer-socials__item">
+                        <a href="https://www.facebook.com/CascadeurEN" class="footer-socials__link footer-socials__link--fb" target="_blank" rel="nofollow noopener noreferrer"></a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://www.youtube.com/channel/UCwF6yYbIFJmB5ynAkzq9Psg
+" class="footer-socials__link footer-socials__link--youtube" target="_blank" rel="nofollow noopener noreferrer"></a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://twitter.com/Cascadeur_soft
+" class="footer-socials__link footer-socials__link--twitter" target="_blank" rel="nofollow noopener noreferrer"></a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://discordapp.com/invite/Ymwjhpn" class="footer-socials__link footer-socials__link--discord" target="_blank" rel="nofollow noopener noreferrer"></a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://trello.com/b/oNlIizJh/cascadeur-roadmap
+" class="footer-socials__link footer-socials__link--trello" target="_blank" rel="nofollow noopener noreferrer"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <div class="main-footer__title">Learn</div>
+                <div class="main-footer__list">
+                    <a href="/learn" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Tutorials
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCwF6yYbIFJmB5ynAkzq9Psg" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Video lessons
+                    </a>
+                    <a href="/help" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Documentation
+                    </a>
+                    <a href="https://forum.cascadeur.com/articles" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Articles
+                    </a>
+                </div>
+            </div>
+            <div class="main-footer__col">
+                <div class="main-footer__title">Community
+                </div>
+                <div class="main-footer__list">
+                    <a href="http://forum.cascadeur.com/" target="_blank" rel="nofollow noopener noreferrer" class="main-footer__item">
+                        Forum
+                    </a>
+                    <a href="https://discordapp.com/invite/Ymwjhpn
+" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">Discord
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCwF6yYbIFJmB5ynAkzq9Psg" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Youtube
+                    </a>
+                    <a href="https://twitter.com/Cascadeur_soft
+" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">Twitter
+                    </a>
+                    <a href="https://www.facebook.com/cascadeurEN/
+" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="main-footer__col">
+                <div class="main-footer__title"><p>Support</p>
+                </div>
+                <div class="main-footer__list">
+                    <a href="https://nekki.helpshift.com/a/cascadeur/?l=en&amp;contact=1" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Report a bug
+                    </a>
+                    <a href="https://trello.com/b/oNlIizJh/cascadeur-roadmap" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Road map
+                    </a>
+                </div>
+            </div>
+            <div class="main-footer__col">
+                <div class="main-footer__title">Download
+                </div>
+                <div class="main-footer__list">
+                    <a href="/download" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">Cascadeur</a>
+                    <a href="https://cascadeurcdn.nekkimobile.ru/download/Review%20Guide.pdf" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Review guide
+                    </a>
+                    <a href="https://cascadeurcdn.nekkimobile.ru/download/Gifs.zip" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Gifs
+                    </a>
+                    <a href="https://cascadeurcdn.nekkimobile.ru/download/Screenshots.zip" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Screenshots
+                    </a>
+                    <a href="https://cascadeurcdn.nekkimobile.ru/download/Cascadeur_Presskit_Full.zip" class="main-footer__item" target="_blank" rel="nofollow noopener noreferrer">
+                        Press kit
+                    </a>
+                </div>
+            </div>
+            <div class="main-footer__col">
+                <div class="main-footer__title">Language</div>
+                <div class="main-footer__list">
+                    <span class="dropdown-item dropdown-item--active lang-url main-footer__item" data-url="/change-language?lang=en&amp;target=%2F">English</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer__information">
+            <div class="main-footer__information-copy">
+                © 2018-2025, Nekki Limited. All rights reserved.
+
+                Cascadeur and its logo are Nekki trademarks or registered trademarks in the EU and elsewhere.
+            </div>
+            <div class="main-footer__information-terms">
+                <a class="main-footer__information-terms-link" target="_blank" rel="nofollow noopener noreferrer" href="https://cascadeur.com/help/category/3">
+                    Privacy policy
+                </a>
+                <a class="main-footer__information-terms-link" target="_blank" rel="nofollow noopener noreferrer" href="https://cascadeur.com/help/category/4">
+                    Terms and conditions
+                </a>
+                <a class="main-footer__information-terms-link" target="_blank" rel="nofollow noopener noreferrer" href="https://cascadeur.com/help/category/57">
+                    FAQ
+                </a>
+                <a class="main-footer__information-terms-link" target="_blank" rel="nofollow noopener noreferrer" href="https://cascadeur.com/about">
+                    About
+                </a>
+                <div class="main-footer__information-created">
+                    Product of
+                    <a href="https://www.nekki.com/" target="_blank" rel="nofollow noopener noreferrer">Nekki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- /footer.html -->
+    </div>
+</div>
+
+<script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT: '../',
+        VERSION: 'k',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE: {
+    {
+        has_source | lower
+    }
+    }
+    }
+    ;
+</script>
+<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../_static/js/underscore.min.js"></script>
+<script type="text/javascript" src="../_static/js/doctools.min.js"></script>
+<script type="text/javascript" src="../_static/js/popper.min.js"></script>
+<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../_static/js/theme.min.js"></script>
+<script type="text/javascript" src="../_static/js/main.js"></script>
+<script type="text/javascript" src="../_static/language_data.js"></script>
+<script type="text/javascript" src="../_static/js/searchtools.min.js"></script>
+<script type="text/javascript" src="../_static/js/autocomplete.min.js"></script>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/sphinx_highlight.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+        Search.loadIndex("../searchindex.js");
+    });
+</script>
+<script type="text/javascript" id="searchindexloader"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+
+</body>
+</html>

@@ -2,16 +2,21 @@
 batch_export_fbx
 ================
 
-指定フォルダ以下の全 .casc を、同じディレクトリ・同じ basename で
-FBX 書き出しするアドオン / コマンドラインツール。
+Cascadeur GUI command (+ console helpers) that exports every .casc under a chosen
+folder to FBX, into the same directory with the same base name.
 
-公開 API（コンソールからの利用に便利）:
-    from commands.batch_export_fbx import run_folder, export_folder_to_fbx
+Primary use: Commands menu -> "Export > Batch casc to FBX" (see command.py).
+
+Console helpers:
+    from commands.batch_export_fbx import run_folder, run_file
     run_folder(r"D:\\path\\to\\projects")
+
+NOTE: ASCII-only on purpose (Cascadeur's script loader can mis-decode multibyte
+source bytes). Japanese docs live in README.md, which is not imported.
 """
 
 from .core import export_folder_to_fbx, find_casc_files, fbx_path_for, make_fbx_settings
-from .cli import run_folder, main, main_from_env
+from .cli import run_folder, run_file
 
 __all__ = [
     "export_folder_to_fbx",
@@ -19,6 +24,5 @@ __all__ = [
     "fbx_path_for",
     "make_fbx_settings",
     "run_folder",
-    "main",
-    "main_from_env",
+    "run_file",
 ]

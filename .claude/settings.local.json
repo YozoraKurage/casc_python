@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"d:/YozoLab/VSCode/_Claude/casc_python/docs/api-reference/_dbg3.py\")",
+      "Bash(python \"d:/YozoLab/VSCode/_Claude/casc_python/docs/api-reference/_conv.py\" csc.view.DialogButton)",
+      "Bash(python \"d:/YozoLab/VSCode/_Claude/casc_python/docs/api-reference/_conv.py\" csc.view.camera_utils.CameraData)",
+      "Bash(python \"d:/YozoLab/VSCode/_Claude/casc_python/docs/api-reference/_conv.py\" --write)"
+    ]
+  }
+}

@@ -116,7 +116,7 @@ def iterate_through_joints(scene):
 | `quick_export/*` | 既定フォルダへの素早い再エクスポート、エクスポートパス管理 |
 | `custom_export/export_inplace_animation.py` | インプレースアニメの出力 |
 | `custom_export/tracks_hierarchy/*` | トラック階層の入出力 |
-| **`batch_export_fbx/`** | **自作ツール**: フォルダ以下の全 `.casc` を同じ場所・同じ名前で FBX 一括書き出し（アドオン＋コンソール＋CLIランチャ）。[README](../batch_export_fbx/README.md) |
+| **`batch_export_fbx/`** | **自作ツール**: フォルダ以下の全 `.casc` を同じ場所・同じ名前で FBX 一括書き出し（GUIコマンド＋コンソールヘルパー）。[README](../batch_export_fbx/README.md) |
 
 → 関連: [FBX 入出力](guides/fbx-io.md) / [csc.fbx](api/fbx.md)
 
@@ -131,16 +131,21 @@ def export_folder(folder):                     # folder 以下の *.casc を再�
         for f in files:
             if not f.lower().endswith(".casc"):
                 continue
-            casc = os.path.join(root, f)
-            out = os.path.splitext(casc)[0] + ".fbx"   # 同じ場所・同じ名前
+            casc = os.path.join(root, f).replace("\\", "/")     # パスは / に正規化
+            out = os.path.splitext(casc)[0] + ".fbx"            # 同じ場所・同じ名前
             sc = sm.create_application_scene(); sm.set_current_scene(sc)
             try:
                 csc.app.ProjectLoader.load_from(casc, sc.domain_scene())
                 tm.get_tool("FbxSceneLoader").get_fbx_loader(sc).export_all_objects(out)
+                # export_* は失敗しても例外を出さないことがある -> 実ファイルを検証
+                if not os.path.exists(out):
+                    print("WARN: not written:", out)
             finally:
                 sm.remove_application_scene(sc)        # 作業タブを必ず閉じる
 ```
 `samples/casc_import_export.py`（処理付きバッチ）が原型。実用版は [batch_export_fbx](../batch_export_fbx/README.md) を参照。
+
+> ⚠️ ハマりどころ: (1) パスは**フォワードスラッシュ**に正規化する（バックスラッシュだとエクスポータがサイレント失敗し得る）。(2) `export_*` は失敗時も例外を出さないことがあるため**書き出し後に実ファイルを検証**する。(3) アドオンの `.py` は **ASCII のみ**で書く（日本語コメント等を入れると Cascadeur のローダが `UnicodeDecodeError` で読み込みに失敗する）。
 
 ---
 
