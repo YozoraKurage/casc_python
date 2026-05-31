@@ -116,7 +116,7 @@ def iterate_through_joints(scene):
 | `quick_export/*` | 既定フォルダへの素早い再エクスポート、エクスポートパス管理 |
 | `custom_export/export_inplace_animation.py` | インプレースアニメの出力 |
 | `custom_export/tracks_hierarchy/*` | トラック階層の入出力 |
-| **`batch_export_fbx/`** | **自作ツール**: フォルダ以下の全 `.casc` を同じ場所・同じ名前で FBX 一括書き出し（GUIコマンド＋コンソールヘルパー）。[README](../batch_export_fbx/README.md) |
+| **`commands/yozolab/batch_export_fbx/`** | **自作コマンド**: フォルダ以下の全 `.casc` を同じ場所・同じ名前で FBX 一括書き出し（GUIコマンド＋コンソールヘルパー）。[README](../commands/yozolab/batch_export_fbx/README.md) |
 
 → 関連: [FBX 入出力](guides/fbx-io.md) / [csc.fbx](api/fbx.md)
 
@@ -143,7 +143,7 @@ def export_folder(folder):                     # folder 以下の *.casc を再�
             finally:
                 sm.remove_application_scene(sc)        # 作業タブを必ず閉じる
 ```
-`samples/casc_import_export.py`（処理付きバッチ）が原型。実用版は [batch_export_fbx](../batch_export_fbx/README.md) を参照。
+`samples/casc_import_export.py`（処理付きバッチ）が原型。実用版は [commands/yozolab/batch_export_fbx](../commands/yozolab/batch_export_fbx/README.md) を参照。
 
 > ⚠️ ハマりどころ: (1) パスは**フォワードスラッシュ**に正規化する（バックスラッシュだとエクスポータがサイレント失敗し得る）。(2) `export_*` は失敗時も例外を出さないことがあるため**書き出し後に実ファイルを検証**する。(3) アドオンの `.py` は **ASCII のみ**で書く（日本語コメント等を入れると Cascadeur のローダが `UnicodeDecodeError` で読み込みに失敗する）。
 

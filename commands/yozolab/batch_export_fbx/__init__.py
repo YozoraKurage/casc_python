@@ -8,7 +8,7 @@ folder to FBX, into the same directory with the same base name.
 Primary use: Commands menu -> "Export > Batch casc to FBX" (see command.py).
 
 Console helpers:
-    from commands.batch_export_fbx import run_folder, run_file
+    from commands.yozolab.batch_export_fbx import run_folder, run_file
     run_folder(r"D:\\path\\to\\projects")
 
 NOTE: ASCII-only on purpose (Cascadeur's script loader can mis-decode multibyte

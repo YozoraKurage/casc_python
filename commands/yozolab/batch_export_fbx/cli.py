@@ -10,7 +10,7 @@ console. Must run inside the Cascadeur process (a plain terminal python cannot
 `import csc`).
 
 Usage (Window > Python console):
-    from commands.batch_export_fbx import cli
+    from commands.yozolab.batch_export_fbx import cli
     cli.run_folder(r"D:\\path\\to\\projects")                 # recursive / all / overwrite
     cli.run_folder(r"D:\\proj", recursive=False, ascii=True, up_axis="Y")
     cli.run_file(r"D:\\proj\\walk.casc")                      # single file (diagnostics)
@@ -47,7 +47,12 @@ def run_folder(folder, *, recursive=True, export_mode="all",
 
 def run_file(casc_path, *, export_mode="all", ascii=False, up_axis=None,
              skip_existing=False, enter_rig_mode=False, log=None):
-    """Export a single .casc (for troubleshooting).
+    """Export a single .casc.
+
+    load_scene opens the .casc as a new tab and exports it. The single-file path
+    does NOT close that tab (closing the active tab crashes Cascadeur); close it
+    manually if you want. For many files, use run_folder, which closes tabs
+    safely by deferring each close until the next file is loaded.
 
     Example:
         cli.run_file(r"D:\\proj\\walk.casc")
@@ -63,23 +68,14 @@ def run_file(casc_path, *, export_mode="all", ascii=False, up_axis=None,
     app = csc.app.get_application()
     sm = app.get_scene_manager()
     tm = app.get_tools_manager()
-    original = None
-    try:
-        original = sm.current_scene()
-    except Exception:  # noqa: BLE001
-        original = None
+    dsm = app.get_data_source_manager()
 
     log(f"[batch_export_fbx] single file: {core.to_fwd(casc_path)} (mode={export_mode})")
-    status, info = core.export_one(
+    status, info, _loaded = core.export_one(
         sm, tm, casc_path,
         export_mode=export_mode, fbx_settings=fbx_settings,
-        skip_existing=skip_existing, enter_rig_mode=enter_rig_mode, log=log)
-
-    if original is not None:
-        try:
-            sm.set_current_scene(original)
-        except Exception:  # noqa: BLE001
-            pass
+        skip_existing=skip_existing, enter_rig_mode=enter_rig_mode, log=log,
+        data_source_manager=dsm)
 
     log(f"[batch_export_fbx] result: {status}  {info}")
     return status, info

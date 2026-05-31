@@ -41,14 +41,15 @@ Cascadeur のスクリプトリローダ／`--run-script` ローダは、**ソ�
 このフォルダ `batch_export_fbx/` を、Cascadeur のユーザーコマンドフォルダ配下に置きます。
 
 ```
-<Cascadeurインストールフォルダ>\users\<ユーザー名>\scripts\python\commands\batch_export_fbx\
+<Cascadeurインストールフォルダ>\users\<ユーザー名>\scripts\python\commands\yozolab\batch_export_fbx\
 ```
 
 Cascadeur を起動（または `Commands > Reload scripts`）すると、`Commands` メニューに
 **`Export > Batch casc to FBX`** が現れます。
 
-> このリポジトリではツール本体をリポジトリ最上階の `batch_export_fbx/` に置いています
-> （`scripts/` は git 管理対象外のため）。利用時はこのフォルダをそのまま上記へコピー／配置してください。
+> このリポジトリでは `commands/yozolab/batch_export_fbx/`（インストール先と同じ構成）に置いています
+> （`scripts/` は git 管理対象外のため）。利用時は `commands/yozolab/` ごと上記のユーザー
+> コマンドフォルダ配下へコピー／配置してください（`yozolab/__init__.py` も必要）。
 
 ---
 
@@ -74,7 +75,7 @@ FBX_SETTINGS = None       # 例: core.make_fbx_settings(ascii=False, up_axis="Y"
 `Window > Python console` を開いて:
 
 ```python
-from commands.batch_export_fbx import cli
+from commands.yozolab.batch_export_fbx import cli
 cli.run_folder(r"D:\path\to\projects")                       # 既定: 再帰 / all / 上書き
 cli.run_folder(r"D:\proj", export_mode="model", skip_existing=True)
 
@@ -112,7 +113,7 @@ Cascadeur には専用のプログレスバー API が無いため、進捗は**
 GUI 等から進捗をフックしたい場合は `progress` コールバックを渡せます（粒度はファイル単位）:
 
 ```python
-from commands.batch_export_fbx import cli
+from commands.yozolab.batch_export_fbx import cli
 def on_progress(done, total, status, casc_path):
     print(f"{int(done*100/total)}%  {status}  {casc_path}")
 cli.run_folder(r"D:\proj", progress=on_progress)
@@ -156,4 +157,4 @@ cli.run_folder(r"D:\proj", progress=on_progress)
 - `enter_rig_mode` はリグの重い変換を伴うため、通常のエクスポートでは不要です（既定 OFF）。
 - 対象バージョン: Cascadeur v2026.1.2（API 名はバージョンで変わる可能性あり）。
 
-関連ドキュメント: [FBX 入出力](../docs/guides/fbx-io.md) / [csc.fbx](../docs/api/fbx.md) / [コマンドアドオン](../docs/guides/commands.md)
+関連ドキュメント: [FBX 入出力](../../../docs/guides/fbx-io.md) / [csc.fbx](../../../docs/api/fbx.md) / [コマンドアドオン](../../../docs/guides/commands.md)
