@@ -1,3 +1,5 @@
+# vibe codingだよ
+
 # casc_python — Cascadeur Python アドオン作業場
 
 Cascadeur の Python アドオン開発のための作業フォルダです。
@@ -37,6 +39,50 @@ casc_python/
 > API ドキュメントの更新（定期ダンプ→差分→整理）は [tools/api_docs/](tools/api_docs/README.md) を参照。
 
 > 実ファイルは `C:\Program Files\Cascadeur\resources\scripts`（読み取り専用）。`scripts/` はその解析用コピーで、**git 管理対象外**（`.gitignore`）です。自作コマンドは [commands/yozolab/](commands/yozolab/) 名前空間（インストール先と同じ構成）に置いています（例: [batch_export_fbx](commands/yozolab/batch_export_fbx/README.md)）。
+
+## 🧩 commands（自作コマンド）の使い方
+
+自作コマンドはすべて **`commands/yozolab/<機能名>/`** に置いています。Cascadeur は
+`commands/` 配下を再帰スキャンし、`run(scene)` を持つモジュールを `Commands` メニューへ
+自動登録します（メニュー表示名は各コマンドの `command_name()` のドット区切りで決まる）。
+
+### インストール（基本は yozolab フォルダをコピペするだけ）
+
+このリポジトリの **`commands/yozolab/` フォルダごと**、Cascadeur のコマンドフォルダにコピーします。
+
+```
+コピー元: casc_python/commands/yozolab/
+コピー先: C:\Program Files\Cascadeur\resources\scripts\python\commands\yozolab\
+```
+
+その後、Cascadeur で **`Commands > Reload scripts`**（または再起動）。これで
+`commands/yozolab/` 配下の全コマンドがメニューに出ます。新しい機能を足したいときも、
+`yozolab/` を上書きコピーするだけです。
+
+> 配置先は、書き込み権限のある **ユーザースクリプトフォルダ**
+> `<Cascadeurインストールフォルダ>\users\<ユーザー名>\scripts\python\commands\yozolab\`
+> でも構いません（公式の推奨はこちら）。どちらか一方に置きます。
+
+### 更新するとき（先に yozolab フォルダを消す）
+
+**更新は「上書き」ではなく、いったん削除してから入れ直す**のが安全です。古いファイルの
+残骸（リネーム前の `.py`、不要になったサブフォルダ等）が残ると、二重登録やエラーの原因に
+なります。
+
+1. コピー先の **`commands\yozolab\` フォルダを丸ごと削除**
+2. 新しい `commands/yozolab/` をコピー
+3. `Commands > Reload scripts`（または再起動）
+
+### 自作コマンドを作るときの決まり
+
+- **置き場所**: `commands/yozolab/<機能名>/`（さらにサブフォルダで階層化も可）。
+- **各フォルダに `__init__.py` 必須**（無いとそのフォルダはスキャンされない）。
+- **名前は Python 識別子**（ASCII 英数字と `_`。スペース・ハイフン・日本語・先頭数字は不可）。
+- **`.py` の中身は ASCII のみ**（日本語コメントを入れると Cascadeur のローダが
+  `UnicodeDecodeError` で読み込みに失敗する）。日本語の説明は `README.md` 等の
+  import されないファイルに置く。
+- **コマンド本体**は `run(scene)` を定義（任意で `command_name()` / `command_description()`）。
+- メニューの階層は `command_name()` のドット（例 `"Export.Batch casc to FBX"`）で決まる。
 
 ## 🔗 公式情報源
 
