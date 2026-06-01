@@ -5,7 +5,7 @@ batch_export_fbx
 Cascadeur GUI command (+ console helpers) that exports every .casc under a chosen
 folder to FBX, into the same directory with the same base name.
 
-Primary use: Commands menu -> "Export > Batch casc to FBX" (see command.py).
+Primary use: Commands menu -> "yozolab > Batch casc to FBX" (see command.py).
 
 Console helpers:
     from commands.yozolab.batch_export_fbx import run_folder, run_file

@@ -30,7 +30,7 @@ FBX_SETTINGS = None
 
 
 def command_name():
-    return "Export.Batch casc to FBX"
+    return "yozolab.Batch casc to FBX"
 
 
 def command_description():
